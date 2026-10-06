@@ -1,5 +1,7 @@
 # E-commerce Grocery Shop (Kabul Fresh Mart)
 
+Sayeda Taiba Agha (Product Owner)
+
 ## Product Backlog
 
 This product backlog has 5 epics: **Registration, Catalog/Search, Cart Management, Payment/Checkout, and Admin Panel.** For each epic, the user stories are developed as follows:
