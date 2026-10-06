@@ -1,5 +1,7 @@
 # E-commerce Grocery Shop (Kabul Fresh Mart)
 
+Sayeda Taiba Agha (Product Owner)
+
 ## Project Overview
 
 Kabul Fresh Mart is a web-based online platform for facilitating the search and purchase of grocery products over the phone at their convenience from their home. The system is organized around five main features: **Registration, Catalog/Search, Cart Management, Payment/Checkout, and Admin Panel.**
