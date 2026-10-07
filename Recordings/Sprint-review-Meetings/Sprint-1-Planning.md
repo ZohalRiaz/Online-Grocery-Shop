@@ -2,12 +2,12 @@
 
 **Sprint:** Sprint 1 — Registration + Catalog/Search  
 **Date:** October 5, 2026  
-**Product Owner:** Sayeda Taiba Agha  
+**Host by Product Owner:** Sayeda Taiba Agha  
 **Frontend Developer:** Faeza Ahmadi  
 **Backend Developer:** Salma Rahman  
 **Scrum Master(Facilitator):** Zohal Riaz
 
-**Meeting Recording:** [View Sprint 1 Planning Meeting](PASTE-MEETING-LINK-HERE)
+**Meeting Recording:** [View Sprint 1 Planning Meeting](https://drive.google.com/file/d/1SCqLGcKQMoQ0WHM6PN2e04Jxm_vR8jrg/view?usp=drive_link)
 
 ---
 
