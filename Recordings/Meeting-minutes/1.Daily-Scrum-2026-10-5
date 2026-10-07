@@ -1,1 +1,136 @@
+# First Daily Scrum Meeting
 
+---
+
+## Meeting Information
+
+- **Date:** October 5, 2026
+- **Time:** 09:00 AM
+- **Platform:** Zoom
+- **Meeting Type:** First Daily Scrum Meeting
+- **Scrum Master:** [Zohal Riaz]
+
+---
+
+## Meeting Purpose
+
+The purpose of this meeting was to review the work completed after the Initial Project Meeting, discuss the Product Backlog and User Stories, identify the required features and tasks for the e-commerce grocery shop, and organize the project work into sprints using Jira.
+
+---
+
+## Main Discussion
+
+During the meeting, the team discussed:
+
+- Review of the Product Backlog
+- Review and development of User Stories
+- Identification of required software features
+- Deriving tasks from the User Stories
+- Dividing the project into major Epics
+- Creating and organizing tasks in Jira
+- Assigning tasks to the appropriate sprints
+- Planning the overall project development process
+- Registration and Catalog features
+- Shopping Cart features
+- Payment and Checkout features
+- Administration and Admin Panel features
+- Integration and Testing
+- Final Error Checking and Improvements
+
+---
+
+## Project Epics
+
+Based on the User Stories and project requirements, the team identified the major Epics of the e-commerce grocery shop.
+
+| Epic | Description |
+|---|---|
+| Registration and Catalog | User registration, login, product catalog, and related product features |
+| Shopping Cart | Adding, removing, and managing products in the shopping cart |
+| Payment and Checkout | Payment processing and completing customer orders |
+| Administration and Admin Panel | Administrative functions and management of the system |
+| Integration and Testing | Integration of the system components and testing the complete application |
+
+---
+
+## Sprint Organization
+
+The team discussed the division of the project work into five sprints. Each Epic and its related tasks were organized into the appropriate sprint in Jira.
+
+| Sprint | Main Work | Status |
+|---|---|---|
+| Sprint 1 | Registration and Catalog | Planned |
+| Sprint 2 | Shopping Cart | Planned |
+| Sprint 3 | Payment, Checkout, Administration, and Admin Panel | Planned |
+| Sprint 4 | Integration and Testing | Planned |
+| Sprint 5 | Final Testing, Error Checking, and Improvements | Planned |
+
+---
+
+## Initial Work Progress
+
+| Task | Responsible Role | Status |
+|---|---|---|
+| Review Product Backlog | Team | Completed |
+| Develop User Stories | Team | Completed |
+| Identify Required Features | Team | Completed |
+| Define Project Epics | Team | Completed |
+| Derive Tasks from User Stories | Development Team | Completed |
+| Create Tasks in Jira | Development Team / Scrum Master | Completed |
+| Organize Tasks into Sprints | Team | Completed |
+| Begin Sprint 1 Work | Development Team | Planned |
+
+---
+
+## Jira Organization
+
+The team discussed the organization of the project in Jira. The User Stories and required features were converted into smaller tasks and sub-features.
+
+The tasks were then organized according to the five major Epics and placed into the appropriate sprints. This organization will help the team manage the development process and track the progress of the project.
+
+---
+
+## Sprint Development Plan
+
+### Sprint 1 — Registration and Catalog
+
+The team will begin with **Registration and Catalog**, focusing on user registration, login, product catalog, and related features.
+
+### Sprint 2 — Shopping Cart
+
+The team will work on the **Shopping Cart**, including the features required for managing products in the customer's cart.
+
+### Sprint 3 — Payment, Checkout, and Administration
+
+The team will develop **Payment and Checkout**, together with the **Administration and Admin Panel** features.
+
+### Sprint 4 — Integration and Testing
+
+The team will focus on **Integration and Testing**, where the different parts of the system will be integrated and tested together.
+
+### Sprint 5 — Final Testing and Error Checking
+
+The final sprint will focus on **Final Testing, Error Checking, and Improvements** to identify and fix remaining problems in the software.
+
+---
+
+## Meeting Outcome
+
+At the end of the meeting, the team had a clear structure for the development of the e-commerce grocery shop. The Product Backlog and User Stories were reviewed, the required features were identified, and the features were divided into tasks and organized in Jira.
+
+The team agreed to work through **five sprints**, beginning with Registration and Catalog and gradually progressing through Shopping Cart, Payment and Checkout, Administration, Integration and Testing, and finally Error Checking and Improvements.
+
+The Jira board will be used to track the team's tasks and progress throughout the development process.
+
+---
+
+## Next Meeting
+
+- **Date:** [7 Oct]
+- **Time:** [09:00 AM]
+- **Platform:** [Zoom]
+
+---
+
+**Notes by:** [Zohal Riaz]  
+**Role:** Scrum Master
