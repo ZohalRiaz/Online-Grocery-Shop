@@ -1,4 +1,4 @@
-# E-commerce Grocery Shop (Kabul Fresh Mart)
+# E-commerce Grocery Shop (Fresh Mart)
 
 Sayeda Taiba Agha (Product Owner)
 
