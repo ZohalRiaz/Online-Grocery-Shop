@@ -80,8 +80,7 @@ These requirements show how well our website should work, like how safe, fast, c
 
 - Use case diagram: will be added in a later sprint.
 - Sequence diagrams (checkout and order status update): will be added in a later sprint.
-- Database entity relationship diagram: will be added in a later sprint.
-
+  
 # Product Owner Review and Approval
 
 _Product Owner:_ Sayeda Taiba Agha  
