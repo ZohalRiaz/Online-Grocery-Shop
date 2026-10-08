@@ -76,7 +76,7 @@ These requirements show how well our website should work, like how safe, fast, c
 | NF-09 | **Scalability:** The system should handle more products, customers and orders without being redesigned.                                                                         | US-04, US-21, US-29         |
 | NF-10 | **Backup and recovery:** The database is backed up every day, and a backup can be restored easily.                                                                           | All user stories            |
 
-# 7. Appendices
+# 5. Appendices
 
 - Use case diagram: will be added in a later sprint.
 - Sequence diagrams (checkout and order status update): will be added in a later sprint.
