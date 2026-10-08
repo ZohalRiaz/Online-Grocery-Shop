@@ -1,9 +1,9 @@
-# 5. Functional Requirements
+# 3. Functional Requirements
 
 Priority key: **Must** = needed for the release,  
 **Should** = will be planned if time allows.
 
-## 5.1 Registration and Access (REG)
+## 3.1 Registration and Access (REG)
 
 | ID     | Requirement                                                                                                                                                                                                 | Priority |
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
@@ -14,7 +14,7 @@ Priority key: **Must** = needed for the release,
 | REG-05 | An administrator account can be only be one and it is created by using the administrator's name, email and password.                                                                                         | Must     |
 | REG-06 | Administrators sign in to the admin, but customer accounts cannot open it.                                                                                                                                   | Must     |
 
-## 5.2 Catalog and Search (CAT)
+## 3.2 Catalog and Search (CAT)
 
 | ID     | Requirement                                                                                                         | Priority |
 |--------|---------------------------------------------------------------------------------------------------------------------|----------|
@@ -27,7 +27,7 @@ Priority key: **Must** = needed for the release,
 | CAT-07 | When nothing matches to search, sort, or filter, friendly message is shown instead of an empty page.                | Should   |
 | CAT-08 | Out-of-stock products are shown as out of stock and cannot be added to the cart.                                   | Must     |
 
-## 5.3 Cart Management (CRT)
+## 3.3 Cart Management (CRT)
 
 | ID     | Requirement                                                                                                        | Priority |
 |--------|--------------------------------------------------------------------------------------------------------------------|----------|
@@ -38,7 +38,7 @@ Priority key: **Must** = needed for the release,
 | CRT-05 | A customer can clear the whole by clicking clear cart button.                                                                 | Must     |
 | CRT-06 | The cart total updates immediately after every change.                                                             | Must     |
 
-## 5.4 Checkout and Orders (CHK)
+## 3.4 Checkout and Orders (CHK)
 
 | ID     | Requirement                                                                                                        | Priority |
 |--------|--------------------------------------------------------------------------------------------------------------------|----------|
@@ -51,7 +51,7 @@ Priority key: **Must** = needed for the release,
 | CHK-07 | After a successful order a confirmation message is displayed for the user.                                         | Must     |
 | CHK-08 | A registered customer can view the list of their previous orders.                                                  | Must     |
 
-## 5.5 Admin Panel (ADM)
+## 3.5 Admin Panel (ADM)
 
 | ID     | Requirement                                                                                                        | Priority |
 |--------|--------------------------------------------------------------------------------------------------------------------|----------|
@@ -59,7 +59,7 @@ Priority key: **Must** = needed for the release,
 | ADM-02 | An administrator can edit an existing product.                                                                     | Must     |
 | ADM-03 | An administrator can remove a product from the catalog.                                                            | Must     |
 | ADM-04 | An administrator can update quantity and availability, of the product in the store.                                | Must     |
-# 6. Non-Functional Requirements
+# 4. Non-Functional Requirements
 
 These requirements show how well our website should work, like how safe, fast, correct and easy to use it is. Each one is linked to the user stories in the Product Backlog.
 
