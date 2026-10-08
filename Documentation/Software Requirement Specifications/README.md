@@ -1,3 +1,68 @@
+
+# Software Requirements Specification
+
+## E-commerce Grocery Shop
+
+**Project:** E-commerce Grocery Shop  
+**Version:** 1.0  
+**Date:** 8 October, 2026  
+**Prepared by:** Sayeda Taiba Agha (Product Owner) and Developer Team
+
+---
+
+## 1. Introduction
+
+### 1.1 Purpose
+
+In this report, our team provides a detailed version of the functional and non-functional specifications for our E-commerce Grocery Shop according to the user story. In this online grocery platform, users will be able to register, search, manage the cart, do payment/checkout, and place orders. Also, the admin will have their own dedicated dashboard where they will be able to manage customers and products.
+
+### 1.2 Scope
+
+It is an online website that provides the following features:
+
+- Customers can navigate grocery products online.
+- Customers can buy products from their home.
+- Admin can manage and sell products online.
+
+### 1.3 References
+
+- ITC315 Course Notes – Requirement Engineering
+- Chapter 4 – Software Requirements Specification
+
+---
+
+## 2. Overall Description
+
+### 2.1 Product Perspective
+
+This platform aims to provide services that connect users from their home to online grocery administration to facilitate their shopping.
+
+### 2.2 Product Functions
+
+Main functions:
+
+- Customers can register an account.
+- Customers can search and find their desired grocery product on the catalog page.
+- Customers can add products to their cart and manage it to prepare for final checkout.
+- Customers can make online payments and order the product.
+- The admin panel will let the administration team manage products available on the website and customers using the website.
+
+### 2.3 User Characteristics
+
+- **Customers:** The platform should be user-friendly and precise for checking purposes.
+- **Admins:** Should be able to administrate product and customers.
+
+### 2.4 Constraints
+
+- Customers shouldn’t have access to the admin dashboard.
+- Customers can navigate the catalog without registration, but they shouldn’t be able to proceed with cart management and the checkout process without registration.
+- Necessary security measures should be taken for the payment process.
+
+### 2.5 Assumptions and Dependencies
+
+- Customers should already have an online payment system.
+- Customers should enter valid payment details.
+
 # 3. Functional Requirements
 
 Priority key: **Must** = needed for the release,  
