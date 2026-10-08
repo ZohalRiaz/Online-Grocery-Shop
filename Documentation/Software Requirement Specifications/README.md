@@ -59,8 +59,33 @@ Priority key: **Must** = needed for the release,
 | ADM-02 | An administrator can edit an existing product.                                                                     | Must     |
 | ADM-03 | An administrator can remove a product from the catalog.                                                            | Must     |
 | ADM-04 | An administrator can update quantity and availability, of the product in the store.                                | Must     |
-| ADM-05 | An administrator can see all customer orders.                                                   | Must     |
-| ADM-06 | An administrator can update the status of an order.                                                                | Must     |
-| ADM-07 | An administrator can view the list of registered customers and their information.                                  | Must     |
-| ADM-08 | An administrator can sign out of the panel.                                                                        | Must     |
+# 6. Non-Functional Requirements
+
+These requirements show how well our website should work, like how safe, fast, correct and easy to use it is. Each one is linked to the user stories in the Product Backlog.
+
+| ID     | Requirement                                                                                                                                                                  | Related User Stories        |
+|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
+| NF-01 | **Security:** Passwords are saved in hashed form, and are not saved as plain text. Logging out ends the session, so the account stays safe.                                              | US-01, US-02, US-03, US-20  |
+| NF-02 | **Access control:** Only signed-in users can place orders and view their own order history. Admin pages and actions are restricted to administrators, and access is checked by the server. | US-02, US-19, US-27, US-28  |
+| NF-03 | **Performance:** Catalog, product details and search results open in about 3 seconds on a normal mobile connection. Cart updates should respond quickly, and placing an order should normally take no more than about 5 seconds.  | US-04, US-10, US-16, US-24  |
+| NF-04 | **Usability:** A new customer should be able to register, find a product and complete checkout without assistance. Error messages should use simple language, and the pages should work on phones, tablets and computers. | US-01, US-15, US-23, US-24  |
+| NF-05 | **Data accuracy:** The cart total and the order total should be calculated correctly, and the prices are calculated by the server. Stock and availability are always up to date, so customers only buy what is really available. | US-04, US-10, US-15, US-22  |
+| NF-06 | **Reliability:** If the network or server has a problem, a clear message is shown and the cart is not lost. The system should prevent the same order from being saved more than once.                             | US-16, US-17                |
+| NF-07 | **Accessibility:** Text is easy to read, the controls can be used with the keyboard, and images have alternative text.                                                       | US-04, US-23                |
+| NF-08 | **Maintainability:** It should clea, organized and documented.                                | All user stories            |
+| NF-09 | **Scalability:** The system should handle more products, customers and orders without being redesigned.                                                                         | US-04, US-21, US-29         |
+| NF-10 | **Backup and recovery:** The database is backed up every day, and a backup can be restored easily.                                                                           | All user stories            |
+
+# 7. Appendices
+
+- Use case diagram: will be added in a later sprint.
+- Sequence diagrams (checkout and order status update): will be added in a later sprint.
+- Database entity relationship diagram: will be added in a later sprint.
+
+# Product Owner Review and Approval
+
+_Product Owner:_ Sayeda Taiba Agha  
+Review date:  
+_Approval statement:_ "I have read this Requirements Specification and I confirm that it correctly shows the current product vision and priorities. I accept it as the starting point to refine the Product Backlog and plan the sprint work."
+
 
