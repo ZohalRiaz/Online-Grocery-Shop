@@ -5,7 +5,6 @@ import HomePage from "./pages/HomePage";
 import AuthPage from "./pages/AuthPage";
 import CatalogPage from "./pages/CatalogPage";
 import ProductPage from "./pages/ProductPage";
-import ProfilePage from "./pages/ProfilePage";
 import Feedback from "./components/Feedback";
 import { useAuth } from "./context/AuthContext";
 import PlaceholderPage from "./pages/PlaceholderPage";
@@ -65,7 +64,6 @@ export default function App() {
         admin={route === "/admin/login"}
       />
     );
-  else if (route === "/profile") page = <ProfilePage />;
   else
     page = (
       <section className="empty-state">
@@ -103,19 +101,12 @@ export default function App() {
               <span className="text-white/70">Loading account…</span>
             ) : user ? (
               <>
-                <a
-                  href="#/profile"
-                  aria-label="View your profile"
-                  className="flex items-center gap-2 transition hover:text-lime"
-                >
-                  <span className="grid size-8 place-items-center rounded-full bg-white/10 text-[12px] font-bold uppercase text-lime ring-1 ring-white/15">
-                    {user.full_name?.[0] || user.email?.[0]}
-                  </span>
-                  <span className="font-medium max-sm:hidden">
-                    {user.full_name || "Profile"}
-                  </span>
-                  <span className="sm:hidden">Profile</span>
-                </a>
+                <span className="grid size-8 place-items-center rounded-full bg-white/10 text-[12px] font-bold uppercase text-lime ring-1 ring-white/15">
+                  {user.full_name?.[0]}
+                </span>
+                <span className="font-medium max-sm:hidden">
+                  {user.full_name}
+                </span>
                 <button
                   className="inline-flex items-center gap-1 rounded-lg border border-white/20 bg-white/5 px-3 py-1.5 text-[11px] font-semibold text-white transition hover:border-lime/60 hover:bg-white/10"
                   onClick={() =>

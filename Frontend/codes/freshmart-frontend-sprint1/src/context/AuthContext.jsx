@@ -2,21 +2,6 @@ import { createContext, useContext, useEffect, useState } from "react";
 import { api } from "../services/api";
 
 const AuthContext = createContext(null);
-const profileKey = (email) =>
-  `freshmart_profile_${encodeURIComponent(email.toLowerCase())}`;
-
-function withSavedProfile(user) {
-  if (!user?.email) return user;
-  try {
-    const saved = JSON.parse(localStorage.getItem(profileKey(user.email)) || "null");
-    return typeof saved?.full_name === "string"
-      ? { ...user, full_name: saved.full_name }
-      : user;
-  } catch {
-    return user;
-  }
-}
-
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [ready, setReady] = useState(false);
@@ -26,7 +11,7 @@ export function AuthProvider({ children }) {
       return;
     }
     api("/auth/me/")
-      .then((data) => setUser(withSavedProfile(data)))
+      .then(setUser)
       .catch((error) => {
         if (error.status === 401) localStorage.removeItem("freshmart_token");
       })
@@ -40,16 +25,7 @@ export function AuthProvider({ children }) {
     if (admin && !data.user.is_staff)
       throw new Error("This account does not have administrator access.");
     localStorage.setItem("freshmart_token", data.token);
-    setUser(withSavedProfile(data.user));
-  }
-  function updateProfile(updates) {
-    if (!user) return;
-    const updatedUser = { ...user, ...updates };
-    localStorage.setItem(
-      profileKey(user.email),
-      JSON.stringify({ full_name: updatedUser.full_name }),
-    );
-    setUser(updatedUser);
+    setUser(data.user);
   }
   async function logout() {
     // The backend has no logout endpoint; logging out means forgetting the token.
@@ -58,7 +34,7 @@ export function AuthProvider({ children }) {
     window.location.hash = "/";
   }
   return (
-    <AuthContext.Provider value={{ user, ready, login, logout, updateProfile }}>
+    <AuthContext.Provider value={{ user, ready, login, logout }}>
       {children}
     </AuthContext.Provider>
   );
