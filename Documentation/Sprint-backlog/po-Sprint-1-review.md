@@ -145,8 +145,8 @@ Create premade examples to test the authenticity and safety of the platform. The
 
 ## 14. References
 
-- **Product Backlog:** `/backlog/product-backlog.md`
-- **Sprint 1 Backlog:** `/docs/sprint-backlogs/sprint-1-backlog.md`
+- **Product Backlog:** `/Product-Backlog/Product-Backlog.md`
+- **Sprint 1 Backlog:** `/docs/Sprint-backlog/Sprint-Planning-1.md`
 
 ---
 
