@@ -3,7 +3,7 @@
 **Prepared by:** Product Owner (Sayeda Taiba Agha)
 
 **Project:** E-Commerce Grocery Shop (Fresh Mart)  
-**Sprint 1:** 5 – 10 Oct, 2026  
+**Sprint 1:** 5 – 10 October, 2026  
 **Report Date:** 10 October, 2026
 
 ---
