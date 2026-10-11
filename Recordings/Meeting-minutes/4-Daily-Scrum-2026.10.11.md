@@ -103,6 +103,12 @@ The next priority is to complete frontend and backend integration and test all s
 
 ---
 
+## Meeting Information
+
+- **Next Meeting:** October 13, 2026
+- 
+- **Platform:** Zoom
+
 **Prepared by:** Zohal Riaz  
 
 **Role:** Scrum Master
