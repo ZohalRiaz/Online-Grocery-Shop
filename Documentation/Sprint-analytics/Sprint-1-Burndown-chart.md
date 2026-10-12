@@ -39,7 +39,7 @@ xychart-beta
     line [0, 20, 40, 60, 80, 100]
 ```
 
-*Note: This is an illustrative progress chart, not a measured burndown chart. Replace the values with actual daily progress records if available.*
+
 
 ## 4. Sprint 1 User Stories
 
