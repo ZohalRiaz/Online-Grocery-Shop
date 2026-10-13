@@ -1,9 +1,13 @@
 # Fresh Mart – Sprint 3 Planning
 
 Project: E-Commerce Grocery Shop (Fresh Mart) 
+
 Course: ITC 315 – Software Engineering Project Sprint: 3 
+
 Sprint Duration: October 14–17, 2026 
+
 Epic: Payment / Checkout + Orders 
+
 Prepared by: Sayeda Taiba Agha (Product Owner)
 
 ## 1. Sprint Goal
