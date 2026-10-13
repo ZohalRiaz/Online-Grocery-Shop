@@ -119,17 +119,18 @@ Meeting Date: October 14, 2026
 Discussion Summary:
 
 Presented the plan to the developer team.
-Plan approval by the developer team.
+Plan approved by the developer team.
 
 Decisions Made:
 
-[Sprint needs to be done in a reasonable amount of time.]
+[The sprint needs to be completed in a reasonable amount of time.]
 
 Prepared by: Sayeda Taiba Agha, Product Owner – Fresh Mart
 
 Approved by: 
 
 Sprint 3 | October 14–17, 2026
+
 Sprint review date: 17 October, 2026
 
 
