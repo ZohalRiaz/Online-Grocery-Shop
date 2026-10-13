@@ -154,5 +154,5 @@ Create premade examples to test the authenticity and safety of the platform. The
 
 **Prepared by:** Sayeda Taiba Agha (Product Owner)  
 **Date:** 10 October, 2025  
-**Next Review:** Sprint 2 Review, 15 October, 2026
+**Next Review:** Sprint 2 Review, 13 October, 2026
 
