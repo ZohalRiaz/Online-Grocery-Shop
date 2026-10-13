@@ -3,7 +3,7 @@
 **Project:** E-Commerce Grocery Shop  
 **Course:** ITC 315 – Software Engineering Project  
 **Sprint:** 2 – Cart Management  
-**Duration:** October 11–15, 2026  
+**Duration:** October 11–13, 2026  
 **Epic:** Cart Management
 
 ---
