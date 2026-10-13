@@ -18,13 +18,13 @@ Creating a fully functional and secure payment section for customers. Customers 
 
 | US ID. | User Story           | Assigned To        |
 | --- | -------------------- | ------------------ |
-| 1   | Contact Information  | Frontend + Backend |
-| 2   | Shipping Information | Frontend + Backend |
-| 3   | Delivery Options     | Frontend + Backend |
-| 4   | Payment Information  | Frontend + Backend |
-| 5   | Review & Place Order | Frontend + Backend |
-| 6   | Order Confirmation   | Frontend + Backend |
-| 7   | Order History        | Frontend + Backend |
+| US 11   | Contact Information  | Frontend + Backend |
+| US 12   | Shipping Information | Frontend + Backend |
+| US 13   | Delivery Options     | Frontend + Backend |
+| US 14   | Payment Information  | Frontend + Backend |
+| US 15   | Review & Place Order | Frontend + Backend |
+| US 16   | Order Confirmation   | Frontend + Backend |
+| US 17   | Order History        | Frontend + Backend |
 
 
 ## 3. Sprint 3 Task Division
