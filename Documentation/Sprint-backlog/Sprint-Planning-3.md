@@ -16,15 +16,18 @@ Creating a fully functional and secure payment section for customers. Customers 
 
 ## 2. Sprint 3 User Stories
 
-| US ID. | User Story           | Assigned To        |
-| --- | -------------------- | ------------------ |
-| US 11   | Contact Information  | Frontend + Backend |
-| US 12   | Shipping Information | Frontend + Backend |
-| US 13   | Delivery Options     | Frontend + Backend |
-| US 14   | Payment Information  | Frontend + Backend |
-| US 15   | Review & Place Order | Frontend + Backend |
-| US 16   | Order Confirmation   | Frontend + Backend |
-| US 17   | Order History        | Frontend + Backend |
+
+| User Story ID | User Story Title | Priority | Assigned To |
+|---|---|---|---|
+| **US-11** | Contact Information | High | Frontend + Backend |
+| **US-12** | Shipping Information | High | Frontend + Backend |
+| **US-13** | Delivery Options | High | Frontend |
+| **US-14** | Payment Information | High | Frontend + Backend |
+| **US-15** | Review Order | High | Frontend + Backend |
+| **US-16** | Place Order | High | Backend |
+| **US-17** | Order Confirmation | High | Frontend + Backend |
+| **US-27** | Order History | Medium | Frontend + Backend |
+
 
 
 ## 3. Sprint 3 Task Division
