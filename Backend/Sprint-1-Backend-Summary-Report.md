@@ -165,7 +165,6 @@ We ran 13 test cases. Twelve passed, and one found a problem in the email input 
 |---|---|---|
 | Database hosting decision | I first wanted a Render cloud database, but the free one lasts only 30 days, and our project ends on November 1 and may be checked after that. | Moved to Supabase. I made a backup in pgAdmin and restored it to the new server to connect to Supabase, so no data was lost. |
 | Frontend and backend did not match at first | They were built separately, so some endpoint names and data formats were different. | Compared both sides and fixed the Sprint 1 parts together with Faezah. |
-| Weak passwords were accepted | A password like `12345678` should not be allowed. | Added Django's password validators, so weak passwords are rejected with a clear message. |
 | Email typo was accepted | During testing, we saw that an email like `name@gmal.com` (a typo of Gmail) is accepted because Django only checks that the email has a valid format. | Found during testing and recorded in our Testing Document. I plan to fix it in Sprint 2. |
 | Products showed emojis instead of real images after seeding | After I seeded the products with images, the site still showed emoji placeholders. The seed command reported “35 images attached,” but the files inside `store/seed_images/` were saved with capital letters (`Apple.jpg`, `Tomato.jpg`), while the seed command was looking for lowercase names (`apple.jpg`, `tomato.jpg`). Windows PowerShell silently refused to rename a file when only the case changed. | I plan to fix this in Sprint 2. |
 
