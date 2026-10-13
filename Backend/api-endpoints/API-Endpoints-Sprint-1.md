@@ -7,7 +7,6 @@
 This file lists the API endpoints I built in Sprint 1 for registration, login, and the product catalog / search. Faezah's frontend uses these endpoints. The endpoints for the cart, checkout and admin panel will be added in the next sprints.
 
 **Base address (when we run it on our computers):** `http://127.0.0.1:8000/api`
-
 ---
 
 ## Authentication Endpoints
@@ -259,14 +258,3 @@ In Sprint 1 only `/api/auth/me/` needs the token. Everything else is public, so 
 5. GET /api/categories/ - Categories
 6. GET /api/products/ - Products (search, category filter, sort)
 7. GET /api/products/:id/ - Product details
-
-**User stories covered (Product Backlog IDs):**
-- US-01: Registration
-- US-02: Login
-- US-03: Logout (the frontend removes the token)
-- US-04: Product catalog
-- US-23: Product details
-- US-24: Search
-- US-25: Filter
-- US-26: Sort
-
