@@ -79,7 +79,7 @@ The following user stories will be considered to develop a cart management syste
 |---|---|---|---|
 | User Stories Completed | 8 | 10 | Done 100% |
 | Bugs Found | 0 | 0 | |
-| Bugs Fixed | N/A | 0 | Done |
+| Bugs Fixed | N/A | 2 minor | Done |
 | Sprint Goal Met | Yes | Yes | Done |
 
 ## 8. Quality Assessment
@@ -90,7 +90,20 @@ Well-developed code in the frontend and backend with reusability potential.
 
 ### 8.2 Testing Quality
 
-All the features worked fully.
+Most of the features worked fully.
+
+Email format validation error.
+
+| Test | Summary |
+|---|---|
+| Metric |	Value 
+| Total Test Cases |	13 |
+| Passed |	12 |
+| Failed |	1 |
+| Pass Rate |	92% |
+| Critical Bugs |	0 |
+| Major Bugs |	0 |
+| Minor Bugs |	2 |
 
 ### 8.3 User Experience
 
