@@ -64,18 +64,6 @@ The main backend functionality for the shopping cart has been implemented. Front
 - Fix any remaining bugs.
 - Coordinate with the frontend developer when integration questions arise.
 
-## 4. Sprint 2 User Story Progress
-
-| User Story ID | User Story | Progress Status |
-|---|---|---|
-| US-09 | Add Product to Cart | Implemented; integration testing pending |
-| US-10 | View Shopping Cart | Main frontend and backend work implemented; testing pending |
-| US-11 | Change Quantity | Implemented; integration testing pending |
-| US-12 | Remove Product | Implemented; integration testing pending |
-| US-13 | Clear Cart | Frontend functionality implemented; full integration verification pending |
-| US-14 | View Cart Total | Subtotal calculation implemented; full total verification pending |
-
-*Statuses are based on the developers' meeting updates. Features should only be marked fully completed after integration and testing are verified.*
 
 
 ## 6. Blockers and Challenges
