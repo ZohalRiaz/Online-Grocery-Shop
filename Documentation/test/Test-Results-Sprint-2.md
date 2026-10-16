@@ -1,11 +1,11 @@
 # Test Results — Sprint 2
 
 **Project:** FreshMart — Online Grocery Shop  
-**Testers:** Salma Rahman (Backend Developer), Faezah (Frontend Developer)  
+**Testers:** Salma Rahman (Backend Developer), Faezah Ahmadi (Frontend Developer)  
 **Sprint:** Sprint 2 (October 11–13, 2026)  
 **Environment:** Local development server (Django backend + React frontend), database on Supabase (PostgreSQL)
 
-During Sprint 2, I tested the shopping cart functionality and product image support. I worked on backend API behavior and data validation, while Faezah worked on the frontend.
+During Sprint 2, I (Salma Rahman) tested the shopping cart functionality and product image support. I worked on backend API behavior and data validation, while I (Faezah Ahmadi) worked on the frontend using Vitest, react testing library, and jsdom. I (faezah ahmadi) also tested the functionality of cart using automated testing and manual testing.
 
 ---
 
@@ -20,8 +20,14 @@ During Sprint 2, I tested the shopping cart functionality and product image supp
 | Major Bugs | 0 |
 | Minor Bugs | 1 |
 | Open Bugs | 1 |
+### Test for frontend
+| Measure        | Value |
+|----------------|-------|
+| Automated tests | 5     |
+| Manual checks   | 7     |
 
-**Note:** The automated test suite completed successfully when run with `python manage.py test store --keepdb`. The database cleanup issue described below remains open and is planned for Sprint 3.
+
+**Note:** The automated test suite completed successfully when run with `python manage.py test store --keepdb` for the backend and `npm test` for frontend. The database cleanup issue described below remains open and is planned for Sprint 3.
 
 ---
 
@@ -155,7 +161,100 @@ Investigate the database connection and cleanup issue in Sprint 3 and implement 
 ### BUG-002 (from Sprint 1): Name length was not checked
 **Status:** FIXED in Sprint 2
 **Fix:** Added `min_length=3` and `max_length=50` to the `full_name` field in `RegisterSerializer`, matching the frontend validation.
+### BUG-003: Out-of-Stock Add to Cart Notification
+**Status:** Fixed 
+**Resolved by:** Faezah Ahmadi in Sprint 2
 
+**Fix:** Updated the Add to Cart functionality to display a red toast notification when a user clicks the Add to Cart button for an out-of-stock product. The button remains visually disabled and keyboard-accessible, and the product is not added to the cart. The same behavior is implemented on both product cards and product detail pages. Successful additions continue to display the existing green confirmation toast.
+# Frontend Testing
+
+Sprint two test report
+
+Tested by: Faezah Ahmadi, front end developer
+
+| Item | Detail |
+|------|--------|
+| Sprint | Sprint 2 of 4, October 11 to October 14, 2026 |
+| Sprint theme | Shopping cart |
+| Test tools | Vitest, React Testing Library, jsdom |
+| Test file | tests/sprint2.test.jsx |
+| Automated tests | 5 |
+| Manual checks | 7 |
+
+---
+
+## Purpose and Scope
+
+This report explains how the Sprint 2 frontend was tested. The cart page gets all its information from the cart state. The automated tests provide it with a pre-set cart and then check what the customer sees and what happens when buttons are clicked. Five automated tests are used for the cart page and a manual checklist is used to check adding items from the catalog and the interaction with the backend.
+
+### Covered by the tests
+- The message that appears when the cart is empty.
+- The list of items, the subtotal in the basket, and the link to checkout.
+- The buttons that change the quantity, which stop at the stock limit and at one.
+- Changing the quantity from the cart page.
+- Removing everything from the cart only after the customer confirms.
+
+### Not covered by the automated tests
+- The visual layout, which is checked visually on phone, tablet and desktop screen sizes.
+
+---
+
+## Test environment
+
+| Item | Detail |
+|------|--------|
+| Test runner | Vitest |
+| Screen testing | React Testing Library with jsdom |
+| Node.js version | v24.13.0 |
+| Command | npm test |
+
+---
+
+## Automated Test Cases
+
+| ID | Area | What is tested | Expected result | Type | Result |
+|----|------|----------------|-----------------|------|--------|
+| S2-T1 | Empty cart | Cart page opened with no items | Message "Your cart is empty." is shown | Screen | Pass |
+| S2-T2 | Items and totals | Cart page opened with two items | Both products are listed, the basket subtotal is correct and Proceed to checkout links to #/checkout | Screen | Pass |
+| S2-T3 | Stock limits | An item at its stock limit and an item with quantity one | Plus is disabled at the limit, minus is disabled at one, plus stays enabled when stock remains | Screen | Pass |
+| S2-T4 | Change quantity | Plus pressed on an item with quantity two | The cart is asked to update that item to quantity three | Screen | Pass |
+| S2-T5 | Clear cart | Clear cart pressed, then confirmed | The confirmation question appears first; the cart is cleared once, and only after Confirm | Screen | Pass |
+
+---
+
+## Manual Verification Checklist
+
+| Scenario | Expected outcome |
+|----------|------------------|
+| Add a product while signed out | Login page opens instead of an error |
+| Add a product while signed in | Toast appears and the header count increases |
+| Enter a quantity above the stock | A message explains the allowed range; nothing is added |
+| Press plus until stock runs out | Plus becomes disabled on that row |
+| Remove one of three items | Only that row disappears and the total drops |
+| Clear the cart and confirm | Empty state appears and the header count returns to zero |
+| Sign out and sign in as someone else | The earlier cart is not visible |
+| Switch the backend off on the cart page | Error banner with a retry button |
+## A glance at automated tests for front end
+```
+describe("Sprint 2: cart page", () => {
+  beforeEach(() => setCart([]));
+
+  it("shows a friendly message when the cart is empty", () => {
+    render(<CartPage />);
+    expect(screen.getByText("Your cart is empty.")).toBeInTheDocument();
+  });
+
+  it("lists the items with their totals and links to checkout", () => {
+    setCart([apple, milk]);
+    render(<CartPage />);
+    expect(screen.getByText("Apple")).toBeInTheDocument();
+    expect(screen.getByText("Milk")).toBeInTheDocument();
+    expect(screen.getByText("$5.00")).toBeInTheDocument(); // basket subtotal
+    expect(screen.getByRole("link", { name: /proceed to checkout/i }))
+      .toHaveAttribute("href", "#/checkout");
+  });
+});
+```
 ## Recommendations for Sprint 3
 
 - Investigate and fix the database test cleanup issue.
@@ -172,7 +271,7 @@ Investigate the database connection and cleanup issue in Sprint 3 and implement 
 
 Sprint 2 added shopping cart functionality, stock validation, product image support, and frontend/backend cart integration.
 
-The Django automated test suite reported 24 passing tests when run with `python manage.py test store --keepdb`. The reported integration checks also confirmed that the product images loaded and that out-of-stock products could not be added to the cart.
+The Django automated test suite reported 24 passing tests when run with `python manage.py test store --keepdb` for the backend and `npm test` for frontend. In addition, the Vitest, and react testing library reported 5 automated tests as successfully passed and  The reported integration checks also confirmed that the product images loaded and that out-of-stock products could not be added to the cart.
 
 One minor database cleanup issue remains open and will be investigated and corrected in Sprint 3. The workaround allowed the automated test suite to complete successfully, but the underlying cleanup issue still needs to be resolved.
 
