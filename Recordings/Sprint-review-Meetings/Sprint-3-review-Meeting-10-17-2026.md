@@ -7,6 +7,7 @@
 **Hosted by Product Owner:** Sayeda Taiba Agha  
 **Frontend Developer:** Faeza Ahmadi  
 **Backend Developer:** Salma Rahman
+
 **Scrum Master:** Zohal Riaz (Facilitator)  
 
 
