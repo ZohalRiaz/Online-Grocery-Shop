@@ -1,6 +1,6 @@
 # Sprint 3 review meeting 
 
-**Sprint:** Sprint 2 — Payment/Checkout 
+**Sprint:** Sprint 3 — Payment/Checkout 
 
 **Date:** October 17, 2026  - 9:15 AM - 9:50 AM
 
