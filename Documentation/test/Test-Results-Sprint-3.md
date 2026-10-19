@@ -1,12 +1,12 @@
 # Test Results — Sprint 3
 
 **Project:** FreshMart — Online Grocery Shop  
-**Testers:** Salma Rahman (Backend)  
+**Testers:** Salma Rahman (Backend), Faezah Ahmadi(frontend developer)
 **Sprint:** Sprint 3 (October 14–17, 2026)  
-**Environment:** Local development server (Django backend), database on Supabase (PostgreSQL). Deployed to Render for live testing.
+**Environment:** Local development server (Django backend), database on Supabase (PostgreSQL). Deployed to Render for live testing. Frontend evirnoment is react.
 
 During Sprint 3, I tested the checkout and order endpoints on the backend and confirmed that the frontend can use them for the checkout page.
-
+I (faezah Ahmadi) have done six automated test and 12 manual test for frontend section.
 ---
 
 ## Test Summary
@@ -129,7 +129,77 @@ Use `python manage.py test store --keepdb` to skip the test database cleanup and
 **Plan:**  
 Investigate the connection-pooling configuration in Sprint 4. If a fix is not practical with Supabase, document the workaround as the standard way to run tests for this project.
 ---
+# Frontend Testing
 
+## Sprint three test report
+
+**Tested by:** Faezah Ahmadi, front end developer
+
+| Item | Detail |
+|---|---|
+| Sprint | Sprint 1 of 14, October to October 17, 2026 |
+| Sprint theme | Payment/ Checkout and order |
+| Backlog scope | stories US-11 to US-17 and US-27 |
+| Test tools | Vitest, React Testing Library, jsdom |
+| Test file | `tests/sprint3.test.jsx` |
+| Automated tests | 6 |
+| Manual checks | 10 |
+
+## 1. Purpose and Scope:
+
+Sprint one and two let the customer to register, browse, and fill the basket. This sprint makes the shopping journey complete by adding procced to checkout, place an order, order confirmation, and order history. The administrator area is not part of this sprint. The planning document places it in Sprint 4. Its routes stay empty until then.
+
+### Covered by tests:
+
+- The phone number rule which is similar to the backend's rule.
+- Delivery fees for standard and express delivery.
+- The exact order sent when an order is placed.
+- Checkout blocks an incomplete form with clear messages to the customer.
+- The review step, placing the order and opening the confirmation.
+- The order history list.
+
+### Not covered by frontend test:
+
+- Reducing stock after an order is checked out (related to the backend)
+- Saving the order and clearing the cart (related to the backend)
+- Visual layout, which is checked by eye on different devices like phone, tablet, laptop
+
+## Test environment
+
+| Item | Detail |
+|---|---|
+| Test runner | Vitest |
+| Screen testing | React Testing Library with jsdom |
+| Node.js version | v24.13.0 |
+| Command | `npm test` |
+
+## 3. Automated Test Cases
+
+| ID | Area | What is tested | Expected result | Type | Result |
+|---|---|---|---|---|---|
+| S3-T1 | Phone rule | Six sample numbers, including spaces, hyphens, Persian digits, a plus sign and a short number | Digits with spaces or hyphens are accepted; a plus sign, a short number and letters are rejected | Logic | Pass |
+| S3-T2 | Delivery fee | Totals calculated for a $10.80 basket | Standard gives $12.80 and express gives $15.80 | Logic | Pass |
+| S3-T3 | Order request | Order body built from sample form values and cart items | Exactly the fields the orders API reads, trimmed values, and items as product id with quantity | Logic | Pass |
+| S3-T4 | Incomplete checkout | Review order pressed with phone, address, city and payment empty | A message appears under each field, the page stays on checkout and nothing is sent | Screen | Pass |
+| S3-T5 | Review and place order | Form completed with express delivery and cash, then reviewed and placed | Review shows the entered details; one order request is sent with the right options and items; the confirmation page opens; the cart is reloaded | Screen | Pass |
+| S3-T6 | Order history | Order list opened with one order | Order number, status, total and an item summary are shown | Screen | Pass |
+
+## 4. Manual Verification Checklist
+
+| Scenario | Expected outcome | Result |
+|---|---|---|
+| Open checkout while signed in | Name and email are already filled in | Pass |
+| Open checkout with an empty cart | Message that the cart is empty and with a link back to shopping | Pass |
+| Submit with an empty phone number | Submission is blocked with a message under that field | Pass |
+| Enter a phone number containing a plus sign | Message that says enter only digits | Pass |
+| Submit without choosing a payment option | Message asking the customer to choose | Pass |
+| Switch from standard to express | Delivery fee and total update immediately | Pass |
+| Go back from review and edit the address | All earlier answers are still in place | Pass |
+| Press Place order twice quickly | Only one order is created | Pass |
+| Place an order with more items than the stock | Server message in a banner; customer stays on review | Pass |
+| Place a valid order | Confirmation page; cart count returns to zero | Pass |
+| Open My orders | The new order appears at the top with its status | Pass |
+| Open checkout or orders while signed out | Login form is shown | Pass |
 ## Conclusion
 
 Sprint 3 added the checkout backend, including validation, order placement, stock updates, cart clearing, duplicate-submission prevention, delivery options, and order history. All 24 automated tests passed, and the endpoints were verified with real requests. The backend was also deployed to Render so the frontend can connect to it. One minor bug (BUG-001) remains open from Sprint 2 and is planned for Sprint 4.
