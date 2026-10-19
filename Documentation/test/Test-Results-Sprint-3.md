@@ -129,6 +129,13 @@ Use `python manage.py test store --keepdb` to skip the test database cleanup and
 **Plan:**  
 Investigate the connection-pooling configuration in Sprint 4. If a fix is not practical with Supabase, document the workaround as the standard way to run tests for this project.
 ---
+## BUG Fixed
+### BUG-001: Out-of-Stock Add to Cart Notification
+**Status:** Fixed
+**Carried from** Sprint 2
+**Resolved by:** Faezah Ahmadi in Sprint 3
+
+**Fix:** Updated the Add to Cart functionality to display a red toast notification when a user clicks the Add to Cart button for an out-of-stock product. The button remains visually disabled and keyboard-accessible, and the product is not added to the cart. The same behavior is implemented on both product cards and product detail pages. Successful additions continue to display the existing green confirmation toast.
 # Frontend Testing
 
 ## Sprint three test report
