@@ -1,107 +1,248 @@
-# Sprint 1 — Registration + Catalog / Search
+# Sprint 1 Planning – E-Commerce Grocery Shop (Fresh Mart)
 
-**Sprint Duration:** October 5–10  
-**Sprint Goal:** Develop customer account features and product catalog/search functionality.  
-**Product Owner:** Sayeda Taiba Agha
+<div align="right"><strong>Updated: October 19, 2026</strong></div>
 
-### Team Responsibilities
-
-| Team Member | Responsibility |
-|---|---|
-| **Faeza Ahmadi** | Frontend Tasks |
-| **Salma Rahman** | Backend Tasks |
+**Course:** ITC 315 – Software Engineering Project  
+**Project:** E-Commerce Grocery Shop (Fresh Mart)  
+**Sprint:** Sprint 1 – Registration + Catalog / Search  
+**Sprint Duration:** October 5–10, 2026  
+**Epics:** Registration + Catalog / Search  
+**Prepared by:** Sayeda Taiba Agha (Product Owner)
 
 ---
 
-## Sprint 1 Planning
+## 1. Sprint 1 Goal
 
-```mermaid
-flowchart LR
+Develop customer account features and product catalog/search functionality.
 
-%% ================= REGISTRATION =================
+## 2. Sprint 1 User Stories
 
-REG["EPIC: REGISTRATION"]
+The following user stories are selected for Sprint 1.
 
-REG --> US1["US-01: Customer Registration<br/>Create a customer account using<br/>name, email, and password"]
+| User Story ID | User Story Title | Assigned To |
+|---|---|---|
+| US-01 | Customer Registration | Frontend + Backend |
+| US-02 | Customer Login | Frontend + Backend |
+| US-03 | Customer Logout | Frontend + Backend |
+| US-04 | Browse Product Catalog | Frontend + Backend |
+| US-23 | View Product Details | Frontend + Backend |
+| US-24 | Search Products | Frontend + Backend |
+| US-25 | Filter Products | Frontend + Backend |
+| US-26 | Sort Products | Frontend + Backend |
 
-REG --> US2["US-02: Customer Login<br/>Sign in using registered<br/>account details"]
+### 2.1 Updated User Stories
 
-REG --> US3["US-03: Customer Logout<br/>Securely log out after<br/>finishing activity"]
+The following user stories were moved from Sprint 4 to Sprint 1:
 
-US1 --> R1["Design registration form<br/>Faeza Ahmadi"]
-US1 --> R2["Validate registration fields<br/>Faeza Ahmadi"]
-US1 --> R3["Create registration backend logic<br/>Salma Rahman"]
-US1 --> R4["Store account in PostgreSQL<br/>Salma Rahman"]
-US1 --> R5["Connect registration form to API<br/>Faeza Ahmadi + Salma Rahman"]
-US1 --> R6["Test registration"]
+| User Story ID | User Story Title | Assigned To |
+|---|---|---|
+| US-19 | Admin Login | Frontend + Backend |
+| US-20 | Admin Logout | Frontend + Backend |
 
-US2 --> L1["Design login form<br/>Faeza Ahmadi"]
-US2 --> L2["Display invalid-login messages<br/>Faeza Ahmadi"]
-US2 --> L3["Validate login credentials<br/>Salma Rahman"]
-US2 --> L4["Implement authentication<br/>Salma Rahman"]
-US2 --> L5["Connect login interface to API<br/>Faeza Ahmadi + Salma Rahman"]
-US2 --> L6["Test login"]
+**Total Sprint 1 User Stories:** 10
 
-US3 --> O1["Add logout control<br/>Faeza Ahmadi"]
-US3 --> O2["End authenticated session<br/>Salma Rahman"]
-US3 --> O3["Redirect after logout<br/>Faeza Ahmadi"]
-US3 --> O4["Protect restricted pages<br/>Salma Rahman"]
-US3 --> O5["Test logout"]
+## 3. Sprint 1 Task Distribution
 
+### 3.1 US-01 – Customer Registration
 
-%% ================= CATALOG / SEARCH =================
+**Frontend Development – Faeza Ahmadi**
+- Design registration form.
+- Validate registration fields.
+- Connect registration form to API.
 
-CAT["EPIC: CATALOG / SEARCH"]
+**Backend Development – Salma Rahman**
+- Create registration backend logic.
+- Store account in PostgreSQL.
+- Connect registration form to API.
 
-CAT --> US4["US-04: Product Catalog<br/>Browse available grocery products<br/>with price and availability"]
+**Testing and Quality Assurance**
+- Test registration.
 
-CAT --> US5["US-05: Product Details<br/>Open a product and view<br/>detailed information"]
+### 3.2 US-02 – Customer Login
 
-CAT --> US6["US-06: Product Search<br/>Find products using<br/>name or keyword"]
+**Frontend Development – Faeza Ahmadi**
+- Design login form.
+- Display invalid-login messages.
+- Connect login interface to API.
 
-CAT --> US7["US-07: Product Filtering<br/>Filter products by category<br/>or availability"]
+**Backend Development – Salma Rahman**
+- Validate login credentials.
+- Implement authentication.
+- Connect login interface to API.
 
-CAT --> US8["US-08: Product Sorting<br/>Sort displayed products<br/>using criteria such as price"]
+**Testing and Quality Assurance**
+- Test login.
 
-US4 --> C1["Build catalog interface<br/>Faeza Ahmadi"]
-US4 --> C2["Display product information<br/>Faeza Ahmadi"]
-US4 --> C3["Create product/category models<br/>Salma Rahman"]
-US4 --> C4["Retrieve products through API<br/>Salma Rahman"]
-US4 --> C5["Handle loading / empty states<br/>Faeza Ahmadi"]
-US4 --> C6["Test product catalog"]
+### 3.3 US-03 – Customer Logout
 
-US5 --> D1["Build product details page<br/>Faeza Ahmadi"]
-US5 --> D2["Display detailed information<br/>Faeza Ahmadi"]
-US5 --> D3["Retrieve product by ID<br/>Salma Rahman"]
-US5 --> D4["Add Add-to-Cart entry point<br/>Faeza Ahmadi"]
-US5 --> D5["Test product details"]
+**Frontend Development – Faeza Ahmadi**
+- Add logout control.
+- Redirect after logout.
 
-US6 --> S1["Add search input<br/>Faeza Ahmadi"]
-US6 --> S2["Display search results<br/>Faeza Ahmadi"]
-US6 --> S3["Implement search API/query<br/>Salma Rahman"]
-US6 --> S4["Handle no-results state<br/>Faeza Ahmadi"]
-US6 --> S5["Test product search"]
+**Backend Development – Salma Rahman**
+- End authenticated session.
+- Protect restricted pages.
 
-US7 --> F1["Build filter controls<br/>Faeza Ahmadi"]
-US7 --> F2["Update displayed results<br/>Faeza Ahmadi"]
-US7 --> F3["Connect filters to API/data<br/>Salma Rahman"]
-US7 --> F4["Add clear/reset filters<br/>Faeza Ahmadi"]
-US7 --> F5["Test filtering"]
+**Testing and Quality Assurance**
+- Test logout.
 
-US8 --> T1["Add sorting control<br/>Faeza Ahmadi"]
-US8 --> T2["Update displayed product order<br/>Faeza Ahmadi"]
-US8 --> T3["Implement sorting logic/API<br/>Salma Rahman"]
-US8 --> T4["Preserve search/filter selections<br/>Faeza Ahmadi"]
-US8 --> T5["Test sorting"]
+### 3.4 US-04 – Browse Product Catalog
 
+**Frontend Development – Faeza Ahmadi**
+- Build catalog interface.
+- Display product information.
+- Handle loading / empty states.
 
-%% ================= STYLING =================
+**Backend Development – Salma Rahman**
+- Create product/category models.
+- Retrieve products through API.
 
-classDef epic fill:#ffffff,color:#000000,stroke:#000000,stroke-width:2px;
-classDef story fill:#ffffff,color:#000000,stroke:#000000,stroke-width:1.5px;
-classDef task fill:#ffffff,color:#000000,stroke:#000000,stroke-width:1px;
+**Testing and Quality Assurance**
+- Test product catalog.
 
-class REG,CAT epic;
-class US1,US2,US3,US4,US5,US6,US7,US8 story;
-class R1,R2,R3,R4,R5,R6,L1,L2,L3,L4,L5,L6,O1,O2,O3,O4,O5,C1,C2,C3,C4,C5,C6,D1,D2,D3,D4,D5,S1,S2,S3,S4,S5,F1,F2,F3,F4,F5,T1,T2,T3,T4,T5 task;
-```
+### 3.5 US-23 – View Product Details
+
+**Frontend Development – Faeza Ahmadi**
+- Build product details page.
+- Display detailed information.
+- Add Add-to-Cart entry point.
+
+**Backend Development – Salma Rahman**
+- Retrieve product by ID.
+
+**Testing and Quality Assurance**
+- Test product details.
+
+### 3.6 US-24 – Search Products
+
+**Frontend Development – Faeza Ahmadi**
+- Add search input.
+- Display search results.
+- Handle no-results state.
+
+**Backend Development – Salma Rahman**
+- Implement search API/query.
+
+**Testing and Quality Assurance**
+- Test product search.
+
+### 3.7 US-25 – Filter Products
+
+**Frontend Development – Faeza Ahmadi**
+- Build filter controls.
+- Update displayed results.
+- Add clear/reset filters.
+
+**Backend Development – Salma Rahman**
+- Connect filters to API/data.
+
+**Testing and Quality Assurance**
+- Test filtering.
+
+### 3.8 US-26 – Sort Products
+
+**Frontend Development – Faeza Ahmadi**
+- Add sorting control.
+- Update displayed product order.
+- Preserve search/filter selections.
+
+**Backend Development – Salma Rahman**
+- Implement sorting logic/API.
+
+**Testing and Quality Assurance**
+- Test sorting.
+
+### 3.9 US-19 – Admin Login
+
+**Frontend Development – Faeza Ahmadi**
+- Design admin login form.
+- Display login validation messages.
+- Connect admin login form to API.
+
+**Backend Development – Salma Rahman**
+- Validate administrator credentials.
+- Implement administrator authentication.
+- Restrict admin panel access to authorized administrators.
+
+**Testing and Quality Assurance**
+- Test valid and invalid admin login.
+- Verify unauthorized users cannot access the admin panel.
+
+### 3.10 US-20 – Admin Logout
+
+**Frontend Development – Faeza Ahmadi**
+- Add admin logout control.
+- Redirect administrator after logout.
+
+**Backend Development – Salma Rahman**
+- End administrator session.
+- Prevent access to protected admin pages after logout.
+
+**Testing and Quality Assurance**
+- Test admin logout.
+- Verify the administrator must log in again to access protected pages.
+
+## 4. Scrum Master Responsibilities
+
+**Assigned To:** Zohal Riaz
+
+- Organize daily Scrum meetings.
+- Follow up on the team's progress.
+- Update the sprint burndown chart.
+- Help the team solve problems during the sprint.
+- Organize the sprint review meeting.
+
+## 5. Product Owner Responsibilities
+
+**Assigned To:** Sayeda Taiba Agha
+
+- Prepare the Sprint 1 plan.
+- Explain the user stories to the development team.
+- Review the completed user stories.
+- Check if the features meet the acceptance criteria.
+- Accept or reject the completed user stories.
+- Prepare the Sprint 1 review report.
+
+## 6. Sprint 1 Expected Deliverables
+
+- Working customer registration form.
+- Customer login and logout functionality.
+- Admin login and logout functionality.
+- Product catalog page.
+- Product details page.
+- Product search, filter, and sort options.
+- Connected frontend and backend.
+- Tested Sprint 1 features.
+
+## 7. Sprint 1 Definition of Done
+
+A user story is considered complete when:
+
+- All assigned tasks are completed.
+- The feature works as expected.
+- Frontend and backend are connected.
+- The feature has been tested.
+- Any major errors are fixed.
+- The acceptance criteria are met.
+- The Product Owner reviews and accepts the user story.
+
+## 8. Sprint Planning Meeting Notes
+
+**Meeting Date:** 
+
+5 October
+
+### Meeting Discussion
+
+Sprint Planning
+
+### Decisions Made
+
+All the assigned tasks need to be completed by 10 October.
+
+---
+
+**Prepared by:**  
+Sayeda Taiba Agha  
+Product Owner – Fresh Mart
+Approved by Developer Team
