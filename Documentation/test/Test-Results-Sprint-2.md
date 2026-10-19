@@ -150,6 +150,10 @@ The issue affects test database cleanup rather than the successful execution of 
 
 Investigate the database connection and cleanup issue in Sprint 3 and implement a proper fix so the test database can be cleaned up without errors.
 
+### BUG-002: Out-of-Stock Add to Cart Notification
+#### found by Faezah Ahmadi
+when the product is out of stock and the customer want to add this to the cart, they should get a warning as a toast notification, explaining the product is out of stock.
+#### status: not solved, will be solved in sprint three
 ---
 
 ## Bugs Fixed in Sprint 2 (Carried From Sprint 1)
@@ -161,11 +165,7 @@ Investigate the database connection and cleanup issue in Sprint 3 and implement 
 ### BUG-002 (from Sprint 1): Name length was not checked
 **Status:** FIXED in Sprint 2
 **Fix:** Added `min_length=3` and `max_length=50` to the `full_name` field in `RegisterSerializer`, matching the frontend validation.
-### BUG-003: Out-of-Stock Add to Cart Notification
-**Status:** Fixed 
-**Resolved by:** Faezah Ahmadi in Sprint 2
 
-**Fix:** Updated the Add to Cart functionality to display a red toast notification when a user clicks the Add to Cart button for an out-of-stock product. The button remains visually disabled and keyboard-accessible, and the product is not added to the cart. The same behavior is implemented on both product cards and product detail pages. Successful additions continue to display the existing green confirmation toast.
 # Frontend Testing
 
 Sprint two test report
