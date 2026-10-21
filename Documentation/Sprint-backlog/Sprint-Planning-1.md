@@ -45,7 +45,7 @@ The following user stories were moved from Sprint 4 to Sprint 1:
 
 ### 3.1 US-01 – Customer Registration
 
-**Frontend Development – Faeza Ahmadi**
+**Frontend Development – Faezah Ahmadi**
 - Design registration form.
 - Validate registration fields.
 - Connect registration form to API.
@@ -60,7 +60,7 @@ The following user stories were moved from Sprint 4 to Sprint 1:
 
 ### 3.2 US-02 – Customer Login
 
-**Frontend Development – Faeza Ahmadi**
+**Frontend Development – Faezah Ahmadi**
 - Design login form.
 - Display invalid-login messages.
 - Connect login interface to API.
@@ -75,7 +75,7 @@ The following user stories were moved from Sprint 4 to Sprint 1:
 
 ### 3.3 US-03 – Customer Logout
 
-**Frontend Development – Faeza Ahmadi**
+**Frontend Development – Faezah Ahmadi**
 - Add logout control.
 - Redirect after logout.
 
@@ -88,7 +88,7 @@ The following user stories were moved from Sprint 4 to Sprint 1:
 
 ### 3.4 US-04 – Browse Product Catalog
 
-**Frontend Development – Faeza Ahmadi**
+**Frontend Development – Faezah Ahmadi**
 - Build catalog interface.
 - Display product information.
 - Handle loading / empty states.
@@ -102,7 +102,7 @@ The following user stories were moved from Sprint 4 to Sprint 1:
 
 ### 3.5 US-23 – View Product Details
 
-**Frontend Development – Faeza Ahmadi**
+**Frontend Development – Faezah Ahmadi**
 - Build product details page.
 - Display detailed information.
 - Add Add-to-Cart entry point.
@@ -115,7 +115,7 @@ The following user stories were moved from Sprint 4 to Sprint 1:
 
 ### 3.6 US-24 – Search Products
 
-**Frontend Development – Faeza Ahmadi**
+**Frontend Development – Faezah Ahmadi**
 - Add search input.
 - Display search results.
 - Handle no-results state.
@@ -128,7 +128,7 @@ The following user stories were moved from Sprint 4 to Sprint 1:
 
 ### 3.7 US-25 – Filter Products
 
-**Frontend Development – Faeza Ahmadi**
+**Frontend Development – Faezah Ahmadi**
 - Build filter controls.
 - Update displayed results.
 - Add clear/reset filters.
@@ -141,7 +141,7 @@ The following user stories were moved from Sprint 4 to Sprint 1:
 
 ### 3.8 US-26 – Sort Products
 
-**Frontend Development – Faeza Ahmadi**
+**Frontend Development – Faezah Ahmadi**
 - Add sorting control.
 - Update displayed product order.
 - Preserve search/filter selections.
@@ -154,7 +154,7 @@ The following user stories were moved from Sprint 4 to Sprint 1:
 
 ### 3.9 US-19 – Admin Login
 
-**Frontend Development – Faeza Ahmadi**
+**Frontend Development – Faezah Ahmadi**
 - Design admin login form.
 - Display login validation messages.
 - Connect admin login form to API.
@@ -170,7 +170,7 @@ The following user stories were moved from Sprint 4 to Sprint 1:
 
 ### 3.10 US-20 – Admin Logout
 
-**Frontend Development – Faeza Ahmadi**
+**Frontend Development – Faezah Ahmadi**
 - Add admin logout control.
 - Redirect administrator after logout.
 
@@ -186,22 +186,22 @@ The following user stories were moved from Sprint 4 to Sprint 1:
 
 **Assigned To:** Zohal Riaz
 
-- Organize daily Scrum meetings.
-- Follow up on the team's progress.
-- Update the sprint burndown chart.
-- Help the team solve problems during the sprint.
-- Organize the sprint review meeting.
+- Arrange daily Scrum meetings.
+- Ensure follow-ups for the team’s progress.
+- Make sure that the sprint burndown chart is updated.
+- Assist the team in problem-solving during the sprint.
+- Arrange the sprint review meeting.
 
-## 5. Product Owner Responsibilities
+## 5. Product Owner Duties
 
 **Assigned To:** Sayeda Taiba Agha
 
-- Prepare the Sprint 1 plan.
+- Create a Sprint 1 plan.
 - Explain the user stories to the development team.
-- Review the completed user stories.
-- Check if the features meet the acceptance criteria.
-- Accept or reject the completed user stories.
-- Prepare the Sprint 1 review report.
+- Review the user stories completed.
+- See if the features meet the acceptance criteria.
+- Accept or reject the user stories completed.
+- Develop a Sprint 1 review report.
 
 ## 6. Sprint 1 Expected Deliverables
 
@@ -216,34 +216,18 @@ The following user stories were moved from Sprint 4 to Sprint 1:
 
 ## 7. Sprint 1 Definition of Done
 
-A user story is considered complete when:
+The completion of a user story can be defined by:
 
-- All assigned tasks are completed.
-- The feature works as expected.
-- Frontend and backend are connected.
-- The feature has been tested.
-- Any major errors are fixed.
-- The acceptance criteria are met.
-- The Product Owner reviews and accepts the user story.
-
-## 8. Sprint Planning Meeting Notes
-
-**Meeting Date:** 
-
-5 October
-
-### Meeting Discussion
-
-Sprint Planning
-
-### Decisions Made
-
-All the assigned tasks need to be completed by 10 October.
+- Completing all the assigned tasks.
+- Functioning of the feature as intended.
+- Connecting the frontend and backend.
+- Testing the feature.
+- Resolving any significant issues.
+- Meeting the acceptance criteria.
+- Acceptance of the user story by the Product Owner.
 
 ---
 
 **Prepared by:**  
 Sayeda Taiba Agha  
 Product Owner – Fresh Mart
-
-Approved by Developer Team
