@@ -9,13 +9,11 @@ Total Story Points: 20 (estimated)
 Daily Progress
 --------------------------------------------------
 
-Date              Day             Story Points Remaining          Work Completed
-
-Oct 11            Day 1                        20                        Sprint planning and task distribution
-
-Oct 12            Day 2                        10                        Cart functionality development
-
-Oct 13            Day 3                        0                         Integration, testing, and final review
+| Date   | Day   | Story Points Remaining | Work Completed                         |
+|--------|-------|------------------------|---------------------------------------|
+| Oct 11 | Day 1 | 20                     | Sprint planning and task distribution |
+| Oct 12 | Day 2 | 10                     | Cart functionality development        |
+| Oct 13 | Day 3 | 0                      | Integration, testing, and final review |
 
 --------------------------------------------------
 Story Points Breakdown
