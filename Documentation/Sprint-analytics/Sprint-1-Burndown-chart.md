@@ -76,8 +76,11 @@ Burndown Chart Data
 Actual / Provisional Story Points:
 
 Day 0 (Oct 5): 30
+
 Day 1 (Oct 6): 30
+
 Day 2 (Oct 7): 21
+
 Day 3 (Oct 8): 6
 
 
@@ -89,11 +92,14 @@ Estimated Velocity: 30 points over 4 days = 7.5 points/day.
 
 Performance:
 - October 5: Sprint planning and task organization.
+- 
 - October 6: Development preparation.
+- 
 - October 7: Registration and authentication progress.
+- 
 - October 8: Catalog/Search development and backend catalog testing were reported complete. Integration testing remained a next step.
 
-Outcome:
+
 Registration and Catalog/Search development progressed significantly during Sprint 1. Completion of all 10 user stories was not confirmed in the supplied meeting records.
 
 --------------------------------------------------
@@ -107,6 +113,7 @@ The burndown chart shows estimated remaining work decreasing from 30 points on O
 ---
 
 **Prepared by:** Zohal Riaz
+
 **Role**: Scrum Master
 
 
