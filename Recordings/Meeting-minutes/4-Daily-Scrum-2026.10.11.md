@@ -85,7 +85,9 @@ The team made significant progress on Sprint 2 — Cart Management. Faezah Ahmad
 The next priority is to complete frontend and backend integration and test all six Sprint 2 User Stories. The Sprint Goal remains to deliver a fully working Cart Management system within the sprint timeline.
 
 ---
-[Watch Meeting Recording)(https://drive.google.com/file/d/1_pv25pGX2SDYQPXJBwMeZY6AzdkbenmG/view?usp=drive_link)
+
+[Watch Meeting Recording) (https://drive.google.com/file/d/1_pv25pGX2SDYQPXJBwMeZY6AzdkbenmG/view?usp=drive_link)
+
 ---
 
 ## Meeting Information
