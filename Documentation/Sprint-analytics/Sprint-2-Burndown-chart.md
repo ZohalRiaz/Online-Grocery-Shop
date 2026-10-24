@@ -1,8 +1,11 @@
 # Sprint 2 Burndown Chart
 
 Project: E-Commerce Grocery Shop (Fresh Mart)
+
 Sprint: Sprint 2 – Cart Management
+
 Duration: October 11–13, 2026 (3 days)
+
 Total Story Points: 20 (estimated)
 
 --------------------------------------------------
