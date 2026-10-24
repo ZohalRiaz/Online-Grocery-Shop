@@ -56,7 +56,6 @@ The completed work included:
 - Deploying the API to Render and connecting it to Supabase
 - Updating and running backend tests
 
-The backend developer reported that all 24 automated tests passed successfully. Manual testing of delivery options, order placement, cart clearing, duplicate-order prevention, and order history was also completed.
 
 **Next Tasks:**
 
