@@ -1,6 +1,6 @@
 
 
-# Daily Scrum 4 — Sprint 2
+# Daily Scrum Meeting — Sprint 2
 
 **Project:** E-Commerce Grocery Shop  
 **Course:** ITC 315 – Software Engineering Project  
