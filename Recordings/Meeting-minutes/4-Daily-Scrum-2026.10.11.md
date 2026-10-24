@@ -17,8 +17,7 @@ The team discussed the progress of Sprint 2, focusing on the Shopping Cart Manag
 
 ## 2. Frontend Developer Update
 
-**Team Member:** Faezah Ahmadi  
-**Role:** Frontend Developer  
+ Faezah Ahmadi  : Frontend Developer  
 
 ### Completed Tasks
 - Created `CartContext` to manage shopping cart state.
@@ -31,8 +30,6 @@ The team discussed the progress of Sprint 2, focusing on the Shopping Cart Manag
 - Reused existing project styles, buttons, and theme components.
 - Shared the frontend implementation with the backend developer.
 
-### Current Status
-The main frontend shopping cart functionality has been implemented.
 
 ### Next Steps
 - Test the complete shopping cart workflow.
@@ -41,8 +38,7 @@ The main frontend shopping cart functionality has been implemented.
 
 ## 3. Backend Developer Update
 
-**Team Member:** Salma Rahman  
-**Role:** Backend Developer  
+Salma Rahman : Backend Developer  
 
 ### Completed Tasks
 - Created the `Cart` and `CartItem` models.
@@ -54,8 +50,7 @@ The main frontend shopping cart functionality has been implemented.
 - Started connecting the backend with the frontend.
 - Identified and fixed several development bugs.
 
-### Current Status
-The main backend functionality for the shopping cart has been implemented. Frontend and backend integration and complete testing are still in progress.
+
 
 ### Next Steps
 - Complete frontend and backend integration.
@@ -89,6 +84,8 @@ The team made significant progress on Sprint 2 — Cart Management. Faezah Ahmad
 
 The next priority is to complete frontend and backend integration and test all six Sprint 2 User Stories. The Sprint Goal remains to deliver a fully working Cart Management system within the sprint timeline.
 
+---
+[Watch Meeting Recording)(https://drive.google.com/file/d/1_pv25pGX2SDYQPXJBwMeZY6AzdkbenmG/view?usp=drive_link)
 ---
 
 ## Meeting Information
