@@ -108,4 +108,5 @@ Chart Description
 
 The burndown chart shows estimated remaining work decreasing from 30 Story Points on October 14 to zero on October 17. The ideal line represents a steady reduction in remaining work throughout the sprint.
 
-Note: Story Point values and daily progress are estimates based on the Sprint 3 plan. Actual progress must be verified using Daily Scrum reports.
+**Prepared By**: Zohal Riaz
+**Role**: Scrum Master
