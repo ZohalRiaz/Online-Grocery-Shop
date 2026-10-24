@@ -101,22 +101,6 @@ The following backend tasks were included in the Sprint 2 plan:
 According to the Sprint 2 Review Report, 24 automated tests passed and no automated tests failed.
 
 
-
-## 7. Acceptance Criteria and Product Owner Review
-
-The Product Owner reviewed all six Cart Management User Stories.
-
-| User Story | Acceptance Result |
-|---|---|
-| Add Product to Cart | Accepted |
-| View Shopping Cart | Accepted |
-| Change Quantity | Accepted |
-| Remove Product | Accepted |
-| Clear Cart | Accepted |
-| View Cart Total | Accepted |
-
-The Sprint Review records that all six User Stories were accepted. The completed functionality allows customers to manage cart contents, update quantities, remove products, clear the cart, and review the total amount before checkout.
-
 ## 8. Sprint 2 Analysis
 
 - **Sprint Goal:** Achieved according to the Sprint Review.
@@ -128,6 +112,7 @@ The Sprint Review records that all six User Stories were accepted. The completed
 - **Testing:** 24 automated tests passed, with no automated test failures reported.
 - **Outstanding Quality Issue:** The detailed review records one minor bug and one open bug, which should be checked before being described as fully resolved.
 - **Progress Tracking:** The chart is illustrative because daily remaining-work data was not recorded.
+
 
 ## 9. Preparation for Sprint 3
 
