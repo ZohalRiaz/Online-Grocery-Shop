@@ -86,15 +86,15 @@ The next priority is to complete frontend and backend integration and test all s
 
 ---
 
-[Watch Meeting Recording) (https://drive.google.com/file/d/1_pv25pGX2SDYQPXJBwMeZY6AzdkbenmG/view?usp=drive_link)
+[Watch Meeting Recording)(https://drive.google.com/file/d/1_pv25pGX2SDYQPXJBwMeZY6AzdkbenmG/view?usp=drive_link)
 
 ---
 
 ## Meeting Information
 
-- **Next Meeting:** October 13, 2026
-- 
-- **Platform:** Zoom
+ **Next Meeting:** October 13, 2026
+ 
+ **Platform:** Zoom
 
 **Prepared by:** Zohal Riaz  
 
