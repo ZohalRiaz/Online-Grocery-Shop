@@ -2,8 +2,11 @@
 # Sprint 3 Burndown Chart
 
 Project: E-Commerce Grocery Shop (Fresh Mart)
+
 Sprint: Sprint 3 – Payment / Checkout + Orders
+
 Duration: October 14–17, 2026 (4 days)
+
 Total Story Points: 30 (estimated)
 
 --------------------------------------------------
