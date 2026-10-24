@@ -10,11 +10,12 @@ Total Story Points: 30 (estimated)
 Daily Progress
 --------------------------------------------------
 
-Date       Day      Story Points Remaining    Work Completed
-Oct 5      Day 1    30                        Sprint planning, backlog review, and task organization
-Oct 6      Day 2    30                        Development preparation and task assignments
-Oct 7      Day 3    21                        Registration UI, validation, and related authentication work
-Oct 8      Day 4    6                         Catalog UI, product details, search, filtering, sorting, and backend catalog development
+| Date   | Day   | Story Points Remaining | Work Completed                                      |
+|--------|-------|------------------------|----------------------------------------------------|
+| Oct 5  | Day 1 | 30                     | Sprint planning, backlog review, and task organization |
+| Oct 6  | Day 2 | 30                     | Development preparation and task assignments       |
+| Oct 7  | Day 3 | 21                     | Registration UI, validation, and authentication work |
+| Oct 8  | Day 4 | 6                      | Catalog UI, product details, search, filtering, sorting, and backend catalog development |
 
 --------------------------------------------------
 Story Points Breakdown
