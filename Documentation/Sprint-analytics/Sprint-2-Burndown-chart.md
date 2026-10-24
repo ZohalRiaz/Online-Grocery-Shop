@@ -1,148 +1,93 @@
+# Sprint 2 Burndown Chart
 
-# Fresh Mart — Sprint 2 Burndown Report
+Project: E-Commerce Grocery Shop (Fresh Mart)
+Sprint: Sprint 2 – Cart Management
+Duration: October 11–13, 2026 (3 days)
+Total Story Points: 20 (estimated)
 
-## 1. Sprint Overview
+--------------------------------------------------
+Daily Progress
+--------------------------------------------------
 
-| Item | Details |
-|---|---|
-| Project | E-Commerce Grocery Shop (Fresh Mart) |
-| Course | ITC 315 – Software Engineering Project |
-| Sprint | Sprint 2 |
-| Epic | Cart Management |
-| Duration | October 11–13, 2026 |
-| Sprint Goal | Implement a fully functional cart management system that allows customers to add products, manage quantities, remove items, clear the cart, and view the total price |
-| Product Owner | Sayeda Taiba Agha |
-| Frontend Developer | Faezah Ahmadi |
-| Backend Developer | Salma Rahman |
-| Scrum Master | Zohal Riaz |
-| Sprint Status | Completed |
+Date       Day      Story Points Remaining    Work Completed
+Oct 11     Day 1    20                        Sprint planning and task distribution
+Oct 12     Day 2    10                        Cart functionality development
+Oct 13     Day 3    0                         Integration, testing, and final review
 
+--------------------------------------------------
+Story Points Breakdown
+--------------------------------------------------
 
-## 2. Sprint 2 Daily Progress
+US-05: Add Product to Cart (4 points)
+- Frontend: 2 points
+- Backend: 1 point
+- Testing: 1 point
 
-Sprint 2 focused on implementing and integrating the cart management functionality. The following table summarizes the sprint activities based on the planned work and the final Sprint Review.
+US-06: View Shopping Cart (4 points)
+- Frontend: 2 points
+- Backend: 1 point
+- Testing: 1 point
 
-| Date | Day | Planned / Reported Activities |
-|---|---|---|
-| October 11, 2026 | Day 1 | Sprint planning, task assignment, and development of Add to Cart and View Shopping Cart functionality |
-| October 12, 2026 | Day 2 | Implementation of quantity management, product removal, Clear Cart functionality, and cart total calculations |
-| October 13, 2026 | Day 3 | Frontend and backend integration, functional testing, bug fixing, final review, and acceptance of the six User Stories |
+US-07: Change Quantity (4 points)
+- Frontend: 2 points
+- Backend: 1 point
+- Testing: 1 point
 
+US-08: Remove Product (2 points)
+- Frontend: 1 point
+- Backend: 0.5 points
+- Testing: 0.5 points
 
-## 3. Sprint 2 Progress Chart
+US-09: Clear Cart (2 points)
+- Frontend: 1 point
+- Backend: 0.5 points
+- Testing: 0.5 points
 
-The following chart illustrates the overall progression of Sprint 2 across its three days. The percentages are illustrative and are not based on recorded daily remaining-work measurements.
+US-10: View Cart Total (4 points)
+- Frontend: 1 point
+- Backend: 2 points
+- Testing: 1 point
 
-```mermaid
-xychart-beta
-    title "Sprint 2 Progress (Illustrative)"
-    x-axis ["Oct 11", "Oct 12", "Oct 13"]
-    y-axis "Illustrative Progress (%)" 0 --> 100
-    line [0, 50, 100]
-```
+--------------------------------------------------
+Burndown Chart Data
+--------------------------------------------------
 
+Actual / Estimated Story Points:
 
-## 4. Sprint 2 User Stories and Completion Status
+Day 0 (Oct 11): 20
+Day 1 (Oct 12): 10
+Day 2 (Oct 13): 0
 
-Sprint 2 included six User Stories under the Cart Management Epic. According to the Sprint 2 Review Report, all six User Stories were completed and accepted by the Product Owner.
+Ideal Burndown:
 
-| User Story ID | User Story Title | Assigned Developers | Status |
-|---|---|---|---|
-| US-09 | Add Product to Cart | Faezah Ahmadi / Salma Rahman | Completed |
-| US-10 | View Shopping Cart | Faezah Ahmadi / Salma Rahman | Completed |
-| US-11 | Change Quantity | Faezah Ahmadi / Salma Rahman | Completed |
-| US-12 | Remove Product | Faezah Ahmadi / Salma Rahman | Completed |
-| US-13 | Clear Cart | Faezah Ahmadi / Salma Rahman | Completed |
-| US-14 | View Cart Total | Faezah Ahmadi / Salma Rahman | Completed |
+Day 0 (Oct 11): 20
+Day 1 (Oct 12): 13.33
+Day 2 (Oct 13): 6.67
+Day 3 (End): 0
 
-## 5. Development Tasks Completed
+--------------------------------------------------
+Analysis
+--------------------------------------------------
 
-### 5.1 Frontend Development
+Estimated Velocity: 20 points over 3 days = 6.67 points/day.
 
-**Assigned to:** Faezah Ahmadi
+Performance:
+- October 11: Sprint planning and task distribution.
+- October 12: Cart functionality development.
+- October 13: Integration, testing, and final review.
 
-The following frontend tasks were included in the Sprint 2 plan and reported as completed in the Sprint Review:
+Outcome:
+The sprint aims to complete all six Cart Management user stories.
 
-- Implemented the Add to Cart button on product cards and product detail pages.
-- Updated the cart interface to reflect added products.
-- Developed the shopping cart page to display product information, prices, quantities, and subtotals.
-- Added quantity controls to increase or decrease product quantities.
-- Implemented individual product removal.
-- Added the Clear Cart option.
-- Displayed the cart total and updated the displayed amounts when cart contents changed.
-- Added user feedback messages for cart actions and invalid quantity entries.
+--------------------------------------------------
+Chart Description
+--------------------------------------------------
 
-### 5.2 Backend Development
+The burndown chart shows estimated remaining work decreasing from 20 Story Points on October 11 to zero on October 13. The ideal line represents a steady reduction in remaining work throughout the sprint.
 
-**Assigned to:** Salma Rahman
+**Prepared By** : Zohal Riaz
 
-The following backend tasks were included in the Sprint 2 plan:
-
-- Implemented cart and cart-item data handling in Django.
-- Developed API functionality for adding products to the cart.
-- Retrieved the logged-in customer's cart and its product details.
-- Implemented quantity updates with validation.
-- Added API functionality to remove individual cart items.
-- Implemented functionality to clear the cart.
-- Calculated item subtotals and the overall cart total.
-- Included stock and quantity validation to prevent invalid cart operations.
-
-### 5.3 Integration and Testing
-
-**Assigned to:** Faezah Ahmadi and Salma Rahman
-
-- Connected frontend cart actions to the backend APIs.
-- Checked cart operations and product quantity management.
-- Tested cart total and subtotal calculations.
-- Verified removal of individual products and clearing of the cart.
-- Ran automated tests and reviewed the cart functionality.
-- Addressed the reported login email-validation issue from Sprint 1.
-
-According to the Sprint 2 Review Report, 24 automated tests passed and no automated tests failed.
+**Role**: Scrum Master
 
 
-## 8. Sprint 2 Analysis
-
-- **Sprint Goal:** Achieved according to the Sprint Review.
-- **Planned User Stories:** 6.
-- **Completed User Stories:** 6.
-- **Accepted User Stories:** 6.
-- **Frontend Work:** Cart interface, quantity controls, product removal, Clear Cart, total display, and user feedback.
-- **Backend Work:** Cart APIs, cart-item operations, quantity validation, stock checks, and price calculations.
-- **Testing:** 24 automated tests passed, with no automated test failures reported.
-- **Outstanding Quality Issue:** The detailed review records one minor bug and one open bug, which should be checked before being described as fully resolved.
-- **Progress Tracking:** The chart is illustrative because daily remaining-work data was not recorded.
-
-
-## 9. Preparation for Sprint 3
-
-Following Sprint 2, the next sprint focused on Payment / Checkout and Orders.
-
-| User Story ID | User Story Title |
-|---|---|
-| US-11 | Contact Information |
-| US-12 | Shipping Information |
-| US-13 | Delivery Options |
-| US-14 | Payment Information |
-| US-15 | Review Order |
-| US-16 | Place Order |
-| US-17 | Order Confirmation |
-| US-27 | Order History |
-
-
-## 10. Conclusion
-
-Sprint 2 focused on delivering the Cart Management functionality for Fresh Mart. The planned scope included adding products to the cart, viewing cart contents, changing quantities, removing products, clearing the cart, and viewing the total price.
-
-According to the Sprint 2 Review Report, all six planned User Stories were completed and accepted by the Product Owner. The review also records 24 successful automated tests and no automated test failures.
-
-The sprint was reported as completed on October 13, 2026. One minor bug and one open bug were also recorded in the detailed quality assessment and should be verified against the testing records.
-
----
-
-**Prepared by:** Zohal Riaz  
-**Role:** Scrum Master  
-**Project:** Fresh Mart — E-Commerce Grocery Shop  
-**Sprint:** Sprint 2 — Cart Management  
-**Report Date:** October 13, 2026
 
