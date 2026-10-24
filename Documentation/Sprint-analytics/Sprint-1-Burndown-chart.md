@@ -1,89 +1,113 @@
 
-# Fresh Mart — Sprint 1 Burndown Report
+# Sprint 1 Burndown Chart
 
-## 1. Sprint Overview
+Project: E-Commerce Grocery Shop (Fresh Mart)
+Sprint: Sprint 1 – Registration + Catalog / Search
+Duration: October 5–8, 2026 (4 days)
+Total Story Points: 30 (estimated)
 
-| Item | Details |
-|---|---|
-| Sprint | Sprint 1 |
-| Duration | October 5–10, 2026 |
-| Sprint Goal | Complete customer registration, authentication, product catalog, product details, and search functionality |
-| Product Owner | Sayeda Taiba Agha |
-| Frontend Developer | Faezah Ahmadi |
-| Backend Developer | Salma Rahman |
-| Scrum Master | Zohal Riaz |
-| Sprint Status | Completed |
+--------------------------------------------------
+Daily Progress
+--------------------------------------------------
 
-## 2. Sprint 1 Daily Progress
+Date       Day      Story Points Remaining    Work Completed
+Oct 5      Day 1    30                        Sprint planning, backlog review, and task organization
+Oct 6      Day 2    30                        Development preparation and task assignments
+Oct 7      Day 3    21                        Registration UI, validation, and related authentication work
+Oct 8      Day 4    6                         Catalog UI, product details, search, filtering, sorting, and backend catalog development
 
-The following table summarizes the team's reported activities throughout Sprint 1.
+--------------------------------------------------
+Story Points Breakdown
+--------------------------------------------------
 
-| Date | Day | Progress |
-|---|---|---|
-| October 5, 2026 | Day 1 | Sprint planning, task breakdown, and development setup |
-| October 6, 2026 | Day 2 | Customer registration and login functionality |
-| October 7, 2026 | Day 3 | Customer logout and authentication functionality |
-| October 8, 2026 | Day 4 | Product catalog and product details |
-| October 9, 2026 | Day 5 | Product search, filtering, and sorting |
-| October 10, 2026 | Day 6 | Final testing, review, and sprint completion |
+US-01: Customer Registration (5 points)
+- Frontend: 2 points
+- Backend: 2 points
+- Testing: 1 point
 
-## 3. Sprint 1 Progress Chart
+US-02: Customer Login (4 points)
+- Frontend: 1 point
+- Backend: 2 points
+- Testing: 1 point
 
-The chart below provides an illustrative overview of progress during Sprint 1. Daily remaining-work measurements were not recorded, so these percentages should not be interpreted as actual measured results.
+US-03: Customer Logout (2 points)
+- Frontend: 1 point
+- Backend: 1 point
 
-```mermaid
-xychart-beta
-    title "Sprint 1 Progress (Illustrative)"
-    x-axis ["Oct 5", "Oct 6", "Oct 7", "Oct 8", "Oct 9", "Oct 10"]
-    y-axis "Illustrative Progress (%)" 0 --> 100
-    line [0, 20, 40, 60, 80, 100]
-```
+US-04: Browse Product Catalog (4 points)
+- Frontend: 2 points
+- Backend: 1 point
+- Testing: 1 point
+
+US-23: View Product Details (3 points)
+- Frontend: 1 point
+- Backend: 1 point
+- Testing: 1 point
+
+US-24: Search Products (3 points)
+- Frontend: 1 point
+- Backend: 1 point
+- Testing: 1 point
+
+US-25: Filter Products (2 points)
+- Frontend: 1 point
+- Backend: 0.5 points
+- Testing: 0.5 points
+
+US-26: Sort Products (2 points)
+- Frontend: 1 point
+- Backend: 0.5 points
+- Testing: 0.5 points
+
+US-19: Admin Login (3 points)
+- Frontend: 1 point
+- Backend: 1 point
+- Testing: 1 point
+
+US-20: Admin Logout (2 points)
+- Frontend: 1 point
+- Backend: 0.5 points
+- Testing: 0.5 points
+
+--------------------------------------------------
+Burndown Chart Data
+--------------------------------------------------
+
+Actual / Provisional Story Points:
+
+Day 0 (Oct 5): 30
+Day 1 (Oct 6): 30
+Day 2 (Oct 7): 21
+Day 3 (Oct 8): 6
 
 
+--------------------------------------------------
+Analysis
+--------------------------------------------------
 
-## 4. Sprint 1 User Stories
+Estimated Velocity: 30 points over 4 days = 7.5 points/day.
 
-Sprint 1 included eight User Stories across two Epics.
+Performance:
+- October 5: Sprint planning and task organization.
+- October 6: Development preparation.
+- October 7: Registration and authentication progress.
+- October 8: Catalog/Search development and backend catalog testing were reported complete. Integration testing remained a next step.
 
-### Epic 1: Registration and Authentication
+Outcome:
+Registration and Catalog/Search development progressed significantly during Sprint 1. Completion of all 10 user stories was not confirmed in the supplied meeting records.
 
-| User Story ID | User Story | Status |
-|---|---|---|
-| US-01 | Customer Registration | Completed |
-| US-02 | Customer Login | Completed |
-| US-03 | Customer Logout | Completed |
+--------------------------------------------------
+Chart Description
+--------------------------------------------------
 
-### Epic 2: Product Catalog and Search
+The burndown chart shows estimated remaining work decreasing from 30 points on October 5 to 6 points on October 8. The ideal line represents a steady reduction to zero by the end of the sprint. Final completion requires confirmation.
 
-| User Story ID | User Story | Status |
-|---|---|---|
-| US-04 | Product Catalog | Completed |
-| US-05 | Product Details | Completed |
-| US-06 | Product Search | Completed |
-| US-07 | Product Filtering | Completed |
-| US-08 | Product Sorting | Completed |
 
-## 5. Sprint 1 Analysis
-
-- **Sprint Goal:** Reported as achieved.
-- **Planned User Stories:** 8.
-- **Completed User Stories:** 8, according to the team's completion report.
-- **Frontend Tasks:** Registration and login forms, logout control, product catalog interface, product details, search, filtering, and sorting.
-- **Backend Tasks:** Registration and authentication logic, account storage in PostgreSQL, product retrieval, search, filtering, and sorting functionality.
-- **Remaining Planned Work:** The team reported that all planned Sprint 1 tasks were completed.
-- **Progress Tracking:** The chart is illustrative because daily remaining-work measurements were not provided.
-
-## 6. Conclusion
-
-Sprint 1 focused on customer registration, authentication, product catalog browsing, product details, search, filtering, and sorting.
-
-According to the team's report, all eight planned User Stories were completed, and the Sprint Goal was achieved by October 10, 2026.
-
-The progress chart provides a visual summary of the sprint timeline. It should not be treated as an actual burndown chart unless daily remaining-work data becomes available.
 
 ---
 
 **Prepared by:** Zohal Riaz
+**Role**: Scrum Master
 
 
 
