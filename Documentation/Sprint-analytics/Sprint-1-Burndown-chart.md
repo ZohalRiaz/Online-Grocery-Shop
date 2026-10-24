@@ -2,8 +2,11 @@
 # Sprint 1 Burndown Chart
 
 Project: E-Commerce Grocery Shop (Fresh Mart)
+
 Sprint: Sprint 1 – Registration + Catalog / Search
+
 Duration: October 5–8, 2026 (4 days)
+
 Total Story Points: 30 (estimated)
 
 --------------------------------------------------
