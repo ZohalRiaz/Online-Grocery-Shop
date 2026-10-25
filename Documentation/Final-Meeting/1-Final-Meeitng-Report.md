@@ -121,3 +121,5 @@ Agenda
 
 
 [Watch the Recording](https://drive.google.com/file/d/1P_T5ufFXDwLAekmhFfJ6Sr625jU44dLu/view?usp=drive_link)
+
+[Watch the Recording Part 2](https://drive.google.com/file/d/1c6l56IpoUPdSeqyer4XalE7XCB8kVPk7/view?usp=sharing)
