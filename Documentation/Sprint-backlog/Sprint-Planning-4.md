@@ -179,3 +179,8 @@ The completion of a user story can be defined by:
 **Prepared by:**  
 Sayeda Taiba Agha  
 Product Owner – Fresh Mart
+
+**Approved by:** 
+
+Developer Team 
+(Salma Rahman & Faezah Ahmadi)
