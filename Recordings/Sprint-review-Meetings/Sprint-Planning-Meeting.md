@@ -32,7 +32,7 @@ Discuss the tasks needs to be done in each sprint.
 
 ## Project Overview reference
 
-Documentation/Project-overview/Project-Description.md
+[Project description](https://github.com/ZohalRiaz/Online-Grocery-Shop/blob/3d678a5d58e9cbeb37969c127731f6d3dcfa8d64/Documentation/Project-overview/Project-Description.md)
 
 ---
 
