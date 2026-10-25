@@ -1,10 +1,15 @@
 # Final Project Review Meeting Agenda
 
 Course: ITC 315 – Software Engineering Project
+
 Project: E-Commerce Grocery Shop (Fresh Mart)
+
 Meeting: Final Project Review Meeting
+
 Date: October 25, 2026
+
 Scrum Master: Zohal Riaz
+
 Product Owner: Sayeda Taiba Agha
 
 --------------------------------------------------
