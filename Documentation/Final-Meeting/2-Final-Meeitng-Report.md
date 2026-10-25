@@ -1,4 +1,4 @@
-# Final Project Review Meeting Agenda
+# Final Project Review Meeting 
 
 Course: ITC 315 – Software Engineering Project
 
@@ -12,6 +12,7 @@ Scrum Master: Zohal Riaz
 
 Product Owner: Sayeda Taiba Agha
 
+Agenda
 --------------------------------------------------
 1. Meeting Objectives
 --------------------------------------------------
