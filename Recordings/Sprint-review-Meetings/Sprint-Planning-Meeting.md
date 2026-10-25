@@ -1,19 +1,18 @@
-# Sprint 1 Planning Meeting Notes
-
-**Sprint:** Sprint 1 — Registration + Catalog/Search  
+# Sprint Planning Meeting Notes
+ 
 **Date:** October 5, 2026  
 **Host by Product Owner:** Sayeda Taiba Agha  
 **Frontend Developer:** Faeza Ahmadi  
 **Backend Developer:** Salma Rahman  
 **Scrum Master(Facilitator):** Zohal Riaz
 
-**Meeting Recording:** [View Sprint 1 Planning Meeting](https://drive.google.com/file/d/1SCqLGcKQMoQ0WHM6PN2e04Jxm_vR8jrg/view?usp=drive_link)
+**Meeting Recording:** [View Sprint Planning Meeting](https://drive.google.com/file/d/1SCqLGcKQMoQ0WHM6PN2e04Jxm_vR8jrg/view?usp=drive_link)
 
 ---
 
 ## Meeting Summary
 
-During the Sprint 1 Planning Meeting, we reviewed the Sprint 1 user stories and discussed the division of development tasks between the frontend and backend.
+During the Sprint Planning Meeting, we reviewed the Sprint 1 user stories and discussed the division of development tasks between the frontend and backend.
 
 Tasks were assigned based on each team member's responsibility. Tasks requiring frontend and backend integration will be completed collaboratively.
 
