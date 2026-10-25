@@ -20,13 +20,13 @@ Discuss the tasks needs to be done in each sprint.
 
 ## Sprint Planning documents
 
-Documentation/Sprint-backlog/Sprint-Planning-1.md
+[Sprint 1 Planning](https://github.com/ZohalRiaz/Online-Grocery-Shop/blob/b2ca00fb81af2309ed970a5ba7ef9112a64b7d36/Documentation/Sprint-backlog/Sprint-Planning-1.md)
 
-Documentation/Sprint-backlog/Sprint-Planning-2.md
+[Sprint 2 Planning](https://github.com/ZohalRiaz/Online-Grocery-Shop/blob/b2ca00fb81af2309ed970a5ba7ef9112a64b7d36/Documentation/Sprint-backlog/Sprint-Planning-2.md)
 
-Documentation/Sprint-backlog/Sprint-Planning-3.md
+[Sprint 3 Planning](https://github.com/ZohalRiaz/Online-Grocery-Shop/blob/b2ca00fb81af2309ed970a5ba7ef9112a64b7d36/Documentation/Sprint-backlog/Sprint-Planning-3.md)
 
-Documentation/Sprint-backlog/Sprint-Planning-4.md
+[Sprint 4 Planning](https://github.com/ZohalRiaz/Online-Grocery-Shop/blob/b2ca00fb81af2309ed970a5ba7ef9112a64b7d36/Documentation/Sprint-backlog/Sprint-Planning-4.md)
 
 ---
 
