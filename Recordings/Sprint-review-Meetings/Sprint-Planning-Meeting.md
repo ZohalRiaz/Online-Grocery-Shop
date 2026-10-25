@@ -20,9 +20,22 @@ Discuss the tasks needs to be done in each sprint.
 
 ## Sprint Planning documents
 
+Documentation/Sprint-backlog/Sprint-Planning-1.md
 
+Documentation/Sprint-backlog/Sprint-Planning-2.md
+
+Documentation/Sprint-backlog/Sprint-Planning-3.md
+
+Documentation/Sprint-backlog/Sprint-Planning-4.md
 
 ---
+
+## Project Overview reference
+
+Documentation/Project-overview/Project-Description.md
+
+---
+
 
 ## Meeting Minutes
 
