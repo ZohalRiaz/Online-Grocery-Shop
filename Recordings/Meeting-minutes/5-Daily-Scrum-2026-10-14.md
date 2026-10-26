@@ -68,7 +68,5 @@ The team confirmed backend completion, deployment, and successful automated test
 [Watch Meeting Recording](https://drive.google.com/file/d/1TaCbb53n-jN8hiUgB18d-Bg1HITfpCYu/view?usp=drive_link)
 
 
-**Prepared By** : Zohal Riaz
-**Role** : Scrum Master
 - **Notes by:** Zohal Riaz
 - **Role:** Scrum Master
