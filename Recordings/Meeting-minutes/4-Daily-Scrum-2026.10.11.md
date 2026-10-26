@@ -8,6 +8,7 @@
 
 - **Date:** October 11, 2026
 - **Time:** 9:00 AM
+- **Platform**: Zoom
 - **Meeting Type:** Daily Scrum Meeting
 - **Project:** E-Commerce Grocery Shop
 - **Sprint:** 2 — Cart Management
