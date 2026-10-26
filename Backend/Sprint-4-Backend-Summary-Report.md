@@ -2,8 +2,7 @@
 
 **Project:** FreshMart - Online Grocery Shop  
 **Developer:** Salma Rahman (Backend)  
-**Sprint dates:** October 18–22, 2026. but done on Oct 23
-
+**Sprint dates:** October 18–22, 2026. but done on Oct 23  
 **Sprint goal:** Develop the Admin Panel backend (products, inventory, orders, customers).
 
 In Sprint 3, I built the checkout and order placement flow. In Sprint 4, I built the Admin Panel backend so administrators can manage products, update inventory, control customer orders, and handle customer accounts. I also added strict security rules to ensure only authorized staff can access these features, and integrated cloud storage so images persist across deployments.
