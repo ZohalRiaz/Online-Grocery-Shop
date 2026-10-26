@@ -1,7 +1,7 @@
 # Test Results — Sprint 4
 
 **Project:** FreshMart — Online Grocery Shop  
-**Testers:** Salma Rahman (Backend)  
+**Testers:** Salma Rahman (Backend Developer), Faezah Ahmadi (Frontend Developer) 
 **Sprint:** Sprint 4 (October 18–22, 2026)  
 **Environment:** Local development server (Django), deployed on Render, database on Supabase (PostgreSQL), storage on Supabase Buckets
 
