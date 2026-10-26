@@ -5,7 +5,7 @@
 **Course:** ITC 315 – Software Engineering Project  
 **Project:** E-Commerce Grocery Shop (Fresh Mart)  
 **Sprint:** Sprint 4 – Admin Panel  
-**Sprint Duration:** October 18–22, 2026  
+**Sprint Duration:** October 18–24, 2026  
 **Epic:** Admin Panel  
 **Prepared by:** Sayeda Taiba Agha (Product Owner)
 
