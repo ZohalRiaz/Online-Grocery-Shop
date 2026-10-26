@@ -82,11 +82,6 @@ The team confirmed progress on frontend cart functionality, backend models and A
 
 ---
 
-## Meeting Information
-
- **Next Meeting:** October 13, 2026
- 
- **Platform:** Zoom
 
 **Prepared by:** Zohal Riaz  
 
