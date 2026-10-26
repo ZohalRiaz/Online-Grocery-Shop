@@ -6,6 +6,7 @@
 ## Meeting Information
 
 - **Date:** October 24, 2026
+- **Time**: 9:00 Am
 - **Platform:** Zoom
 - **Project:** Fresh Mart – E-Commerce Grocery Shop
 - **Sprint:** 4
