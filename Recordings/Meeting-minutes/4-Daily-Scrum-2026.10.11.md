@@ -7,14 +7,11 @@
 ## Meeting Information
 
 - **Date:** October 11, 2026
-- **Time:** Not specified
-- **Platform:** Not specified
+- **Time:** 9:00 AM
 - **Meeting Type:** Daily Scrum Meeting
-- **Scrum Master:** Zohal Riaz
 - **Project:** E-Commerce Grocery Shop
-- **Course:** ITC 315 – Software Engineering Project
 - **Sprint:** 2 — Cart Management
-- **Sprint Duration:** October 11–15, 2026
+
 
 ---
 
