@@ -1,88 +1,82 @@
 
 
-# Daily Scrum Meeting — Sprint 2
-
-**Project:** E-Commerce Grocery Shop  
-**Course:** ITC 315 – Software Engineering Project  
-**Date:** October 11, 2026  
-**Sprint:** Sprint 2 — Cart Management  
-**Sprint Duration:** October 11–15, 2026  
-**Scrum Master:** Zohal Riaz  
+# Daily Scrum Meeting – Sprint 2
 
 ---
 
-## 1. Daily Scrum Overview
+## Meeting Information
 
-The team discussed the progress of Sprint 2, focusing on the Shopping Cart Management feature. Both developers reported progress on their assigned tasks, including frontend cart functionality, backend APIs, and initial testing.
+- **Date:** October 11, 2026
+- **Time:** Not specified
+- **Platform:** Not specified
+- **Meeting Type:** Daily Scrum Meeting
+- **Scrum Master:** Zohal Riaz
+- **Project:** E-Commerce Grocery Shop
+- **Course:** ITC 315 – Software Engineering Project
+- **Sprint:** 2 — Cart Management
+- **Sprint Duration:** October 11–15, 2026
 
-## 2. Frontend Developer Update
+---
 
- Faezah Ahmadi  : Frontend Developer  
+## Meeting Purpose
 
-### Completed Tasks
-- Created `CartContext` to manage shopping cart state.
-- Implemented core cart functionality.
-- Added products to the cart.
-- Implemented increasing and decreasing product quantities.
-- Implemented removing products from the cart.
-- Implemented clearing the cart.
-- Created a dedicated shopping cart route.
-- Reused existing project styles, buttons, and theme components.
-- Shared the frontend implementation with the backend developer.
+The purpose of this meeting was to review Sprint 2 progress, discuss frontend and backend Cart Management development, identify challenges, and plan integration and testing.
 
+---
 
-### Next Steps
-- Test the complete shopping cart workflow.
-- Verify that cart actions work correctly with the backend APIs.
-- Fix any frontend integration issues.
+## Team Progress
 
-## 3. Backend Developer Update
+### Frontend Development
 
-Salma Rahman : Backend Developer  
+**Assigned to:** Faezah Ahmadi
 
-### Completed Tasks
-- Created the `Cart` and `CartItem` models.
-- Developed APIs to add cart items.
-- Implemented updating cart item quantities.
-- Implemented removing cart items.
-- Added cart subtotal calculation.
-- Performed initial testing of cart functionality.
-- Started connecting the backend with the frontend.
-- Identified and fixed several development bugs.
+Faezah created `CartContext` to manage cart state and implemented adding products, increasing and decreasing quantities, removing items, clearing the cart, and a dedicated cart route using the project's existing styles and components. She also shared the frontend implementation with the backend developer. Her next tasks are to test the complete cart workflow, verify API integration, and fix any frontend issues.
 
+### Backend Development
 
+**Assigned to:** Salma Rahman
 
-### Next Steps
-- Complete frontend and backend integration.
-- Test all shopping cart operations.
-- Verify subtotal and total calculations.
-- Fix any remaining bugs.
-- Coordinate with the frontend developer when integration questions arise.
+Salma created the `Cart` and `CartItem` models, developed APIs for adding, updating, and removing cart items, implemented subtotal calculation, and performed initial testing. She also began frontend-backend integration and fixed several development bugs. Her next tasks are to complete integration, test all cart operations and calculations, resolve remaining bugs, and coordinate with the frontend developer.
 
+---
 
+## Daily Progress
 
-## 6. Blockers and Challenges
+| Team Area | Progress | Status |
+|---|---|---|
+| Frontend | Implemented cart state management and core cart operations | Completed |
+| Backend | Created cart models, APIs, and subtotal calculation | Initial Testing Completed |
+| Integration | Connected frontend cart functionality with backend APIs | In Progress |
+| Testing | Verify cart operations, calculations, and validation | Pending |
 
-- The backend developer initially needed the frontend implementation before completing integration.
-- Some coding bugs and errors occurred during development; the backend developer reported fixing them.
-- Full frontend and backend integration and testing remain in progress.
+---
 
-No other blockers were reported during the meeting.
+## Sprint Progress
 
-## 7. Plan for the Next Working Session
+The main frontend cart functionality and backend models and APIs have been implemented. Frontend-backend integration and comprehensive testing remain in progress. Sprint 2 aims to deliver a fully functional Cart Management system covering all six User Stories.
 
-- Connect the frontend cart interface to the backend APIs.
-- Test adding, viewing, updating, removing, and clearing cart items.
-- Verify subtotal and total calculations.
-- Test empty-cart behavior and quantity validation.
-- Fix remaining integration bugs.
-- Confirm completion of Sprint 2 tasks after testing.
+---
 
-## 8. Meeting Summary
+## Overall Project Progress
 
-The team made significant progress on Sprint 2 — Cart Management. Faezah Ahmadi implemented the main frontend cart functionality, while Salma Rahman developed the cart models, APIs, and subtotal calculation.
+| Sprint | Feature | Progress |
+|---|---|---|
+| Sprint 1 | Registration and Product Catalog | Completed |
+| Sprint 2 | Cart Management | In Progress |
+| Sprint 3 | Payment, Checkout, and Orders | Planned |
+| Sprint 4 | Admin Panel | Planned |
 
-The next priority is to complete frontend and backend integration and test all six Sprint 2 User Stories. The Sprint Goal remains to deliver a fully working Cart Management system within the sprint timeline.
+---
+
+## Challenges and Solutions
+
+The backend developer needed the frontend implementation before completing integration, and several development bugs occurred. The frontend code was shared, and the reported bugs were fixed. The team will now complete integration and test cart operations, calculations, and validation.
+
+---
+
+## Meeting Outcome
+
+The team confirmed progress on frontend cart functionality, backend models and APIs, and initial testing. The next priorities are completing integration, testing all cart operations and calculations, fixing remaining issues, and verifying the six Sprint 2 User Stories before confirming completion.
 
 ---
 
