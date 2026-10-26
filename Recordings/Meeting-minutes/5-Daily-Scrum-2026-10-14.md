@@ -7,94 +7,42 @@
 - **Date:** October 14, 2026
 - **Time:** 09:00 AM
 - **Platform:** Zoom
-- **Meeting Type:** Daily Scrum Meeting
 - **Scrum Master:** Zohal Riaz
-- **Project:** Fresh Mart – E-Commerce Grocery Shop
 - **Sprint:** 3
-- **Sprint Duration:** October 14–17, 2026
 - **Epic:** Payment / Checkout + Orders
+
+---
 
 ## Meeting Purpose
 
-The purpose of this meeting was to review the team's progress on the first day of Sprint 3, discuss completed backend tasks, coordinate frontend development, identify challenges, and plan the next development and testing activities.
+The purpose of this meeting was to review the first day of Sprint 3, confirm backend progress, coordinate frontend development, and plan integration and testing.
 
-## Main Discussion
-
-During the meeting, the team discussed:
-
-- Starting Sprint 3 development
-- Completing the checkout and order management backend
-- Implementing standard and express delivery options
-- Updating the Place Order and Order History APIs
-- Validating checkout information and calculating order totals
-- Saving orders, updating product stock, and clearing the cart
-- Preventing duplicate orders and inventory conflicts
-- Deploying the backend API to Render and connecting it to Supabase
-- Running automated and manual backend tests
-- Coordinating backend and frontend development
-- Planning checkout UI development
-- Preparing and submitting the Sprint 2 report
+---
 
 ## Team Progress
 
 ### Backend Development
 
-The backend team member, Salma Rahman, reported that the main backend tasks for Sprint 3 had been completed.
+**Assigned to:** Salma Rahman
 
-The completed work included:
-
-- Updating the order model and serializers
-- Implementing standard delivery ($2) and express delivery ($5)
-- Updating the Place Order API
-- Validating contact, shipping, payment, and delivery information
-- Calculating delivery fees and final order totals
-- Saving orders and order items
-- Reducing product stock after successful orders
-- Clearing the shopping cart after successful order placement
-- Preventing duplicate order submissions and inventory conflicts
-- Updating the Order History API to display only the current customer's orders
-- Deploying the API to Render and connecting it to Supabase
-- Updating and running backend tests
-
-
-**Next Tasks:**
-
-- Share the deployed API with the frontend developer
-- Support frontend integration and resolve any API-related issues
-- Assist with integration testing if required
+She completed the main checkout and order backend tasks, including standard and express delivery options, order validation and total calculations, saving orders and order items, updating product stock, clearing the cart after successful orders, preventing duplicate submissions and inventory conflicts, and updating the Order History API. She deployed the API to Render., and reported that all 24 automated tests passed. Her next tasks are to share the API with the frontend developer and support integration and troubleshooting.
 
 ### Frontend Development
 
-The frontend team member, Faezah Ahmadi, reported that Sprint 3 frontend development had not yet started because the backend API had not been received at the time of the meeting.
+**Assigned to:** Faezah Ahmadi
 
-The team agreed to complete and share the backend API first so the frontend could be developed according to the actual API structure, reducing integration errors.
+Faezah prepared and submitted the Sprint 2 report to GitHub. Sprint 3 frontend development had not yet started because she was waiting for the backend API. Once received, she plans to implement the checkout forms for contact and shipping information, delivery and payment options, order review and totals, the order confirmation page, and order history.
 
-The frontend developer also reported that the Sprint 2 report had been prepared and submitted to GitHub.
 
-**Planned Tasks:**
-
-- Build the contact information form
-- Prefill customer account information when appropriate
-- Build the shipping address form
-- Display standard and express delivery options
-- Build the payment information section and validation messages
-- Create the order review section
-- Display order totals and checkout information
-- Build the order confirmation page
-- Display the order number, status, and summary
-- Build the order history page
-
-## Daily Progress
-
-| Team Area | Yesterday's Work | Today's Work | Status |
-|---|---|---|---|
-| Backend | Completed checkout and order backend development, deployed the API, and ran tests | Share the API and support frontend integration | Backend Completed |
-| Frontend | Prepared and submitted the Sprint 2 report to GitHub | Begin checkout UI development after receiving the backend API | Awaiting Backend API |
-| Testing | Completed backend automated and manual testing | Test frontend functionality and integrated features as development progresses | Integration Testing Pending |
+---
 
 ## Sprint Progress
 
-The project consists of four sprints, each focused on a major area of the Fresh Mart application.
+The checkout and order backend was completed, deployed, and tested, with all 24 automated tests passing. Frontend checkout development is waiting for the API handover. Integration and checkout workflow testing remain the next priorities.
+
+---
+
+## Overall Project Progress
 
 | Sprint | Feature | Progress |
 |---|---|---|
@@ -103,22 +51,24 @@ The project consists of four sprints, each focused on a major area of the Fresh 
 | Sprint 3 | Payment, Checkout, and Orders | In Progress |
 | Sprint 4 | Admin Panel | Planned |
 
+---
+
 ## Challenges and Solutions
 
-The team previously encountered frontend and backend integration errors caused by inconsistencies between the two implementations. To reduce these issues, the team agreed that the backend API should be completed and shared before frontend integration begins. The backend developer reported that the API was deployed and tested, while the frontend developer was waiting to receive it before starting the checkout interface. Integration testing will follow once the frontend is connected to the backend.
+Previous inconsistencies between frontend and backend implementations caused integration issues. The team agreed to complete and share the backend API before frontend integration. The API was deployed and tested, and frontend development will begin once the API is received.
+
+---
 
 ## Meeting Outcome
 
-The backend developer reported completing and deploying the Sprint 3 backend, with all 24 automated tests passing. The frontend developer completed the Sprint 2 report and planned to begin the checkout interface after receiving the API. The next major task is to integrate the frontend with the backend and test the checkout and order functionality.
+The team confirmed backend completion, deployment, and successful automated testing. Faezah submitted the Sprint 2 report and will begin checkout UI development after receiving the API. The next priorities are frontend-backend integration, checkout implementation, and testing the order workflow.
 
 ## Meeting Recording
 
 [Watch Meeting Recording](https://drive.google.com/file/d/1TaCbb53n-jN8hiUgB18d-Bg1HITfpCYu/view?usp=drive_link)
 
-## Next Meeting
 
-- **Date:** October 15, 2026
-- **Time:** 09:00 AM
-- **Platform:** Zoom
+**Prepared By** : Zohal Riaz
+**Role** : Scrum Master
 - **Notes by:** Zohal Riaz
 - **Role:** Scrum Master
