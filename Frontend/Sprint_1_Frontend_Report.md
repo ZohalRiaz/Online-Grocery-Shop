@@ -217,14 +217,3 @@ The second sprint will run from 11 to 17 October. Our goal is to include the sho
 | **src/services/api.js** | Requests, token header, timeouts, error translation and API alignment |
 | **src/services/mockApi.js, mockData.js** | Sample-data mode for working without the backend |
 
-### B. Screenshots to attach
-
-- `screenshots/home-page.png`: hero section, category cards and connection panel
-
-- `screenshots/register-page.png`: registration form, including a validation message
-
-- `screenshots/login-page.png`: customer login
-
-- `screenshots/catalog-page.png`: product grid with filters applied
-
-- `screenshots/product-page.png`: product details with stock information
