@@ -171,12 +171,3 @@ Sprint 4 completes the project. The frontend work planned for it is:
 | `src/services/checkoutRules.js` | Delivery and payment options, phone rule, totals and the order request body |
 | `src/App.jsx` | Routes for checkout and orders, private-page handling and the My orders link |
 | `src/index.css` | Status badge colors, including shipped |
-
-### B. Screenshots to attach
-
-- `screenshots/checkout-form.png`: contact, address, delivery and payment sections
-- `screenshots/checkout-errors.png`: validation messages
-- `screenshots/order-review.png`: review step
-- `screenshots/order-confirmation.png`: confirmation page with order number
-- `screenshots/order-history.png`: My orders list
-- `screenshots/order-details.png`: single order details
