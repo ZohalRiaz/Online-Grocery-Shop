@@ -157,12 +157,3 @@ a review step and order placement.
 | src/components/ProductCard.jsx | Add to cart button on product cards |
 | src/App.jsx | Cart link and badge, toast, private routes |
 
-### B. Screenshots to attach
-
-- screenshots/cart-page.png: cart with several items and the summary panel
-
-- screenshots/cart-empty.png: empty state
-
-- screenshots/add-to-cart.png: product card with the Add button and header badge
-
-- screenshots/clear-cart-confirm.png: inline confirmation
