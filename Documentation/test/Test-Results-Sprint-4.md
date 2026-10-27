@@ -3,9 +3,10 @@
 **Project:** FreshMart — Online Grocery Shop  
 **Testers:** Salma Rahman (Backend Developer), Faezah Ahmadi (Frontend Developer)    
 **Sprint:** Sprint 4 (October 18–22, 2026)  
-**Environment:** Local development server (Django), deployed on Render, database on Supabase (PostgreSQL), storage on Supabase Buckets
+**Environment:** Local development server (Django), deployed on Render, database on Supabase (PostgreSQL), storage on Supabase Buckets, React 19, Vite, Tailwind CSS 4, lucide-react
 
-During Sprint 4, I tested the new Admin Panel endpoints and confirmed that the security rules, order transitions, customer management logic, and cloud image uploads work correctly.
+During Sprint 4, I (Salma Rahman)tested the new Admin Panel endpoints and confirmed that the security rules, order transitions, customer management logic, and cloud image uploads work correctly.
+During sprint four I (Faezah Ahmadi) tested managing products, stock, customer orders and customer accounts from front end side.
 
 ---
 
@@ -130,5 +131,131 @@ The `--keepdb` flag reuses the existing test database instead of recreating it f
 
 ---
 
+## **Frontend Testing**
+
+Sprint four test report  
+**Tested by:** Faezah Ahmadi, front end developer
+
+---
+
+## 📅 Sprint Information
+
+| Item            | Detail                                |
+|-----------------|----------------------------------------|
+| Sprint          | Sprint 4 of 4, October 18 to October 26, 2026 |
+| Sprint theme    | Admin panel                           |
+| Backlog scope   | stories US-21, US-22, US-28 and US-29 |
+| Test tools      | Vitest, React Testing Library, jsdom  |
+| Test files      | `tests/sprint4.test.jsx` and `tests/api.test.js` |
+| Automated tests | 16                                    |
+| Manual checks   | 18                                    |
+
+---
+
+## 1. Purpose and Scope
+
+Sprints one to three let the customer register, browse, fill the basket, check out and review orders.  
+This sprint adds the administrator side: managing products, stock, customer orders and customer accounts.  
+
+Covered by tests:
+- Order status steps and stock/price rules
+- Exact admin requests: addresses, methods, form data
+- Access control (admins only)
+- Dashboard, product list, add/edit/delete products
+- Inventory warnings and stock quantity validation
+- Order filters, status buttons, order details
+- Blocking/unblocking customers
+- Message when backend route is missing
+
+Not covered:
+- Visual layout (checked manually on phone, tablet, desktop)
+
+---
+
+## 2. Test Environment
+
+| Item            | Detail                  |
+|-----------------|--------------------------|
+| Test runner     | Vitest                  |
+| Screen testing  | React Testing Library with jsdom |
+| Node.js version | v24.13.0                |
+| Command         | `npm test`              |
+
+---
+
+## 3. Automated Test Cases
+
+| ID     | Area                | What is tested | Expected result | Type   | Result |
+|--------|---------------------|----------------|----------------|--------|--------|
+| S4-T1  | Order status steps  | Allowed next steps | Pending → processing/cancelled; Processing → shipped/cancelled; Shipped → delivered; Delivered/cancelled → none | Logic | Pass |
+| S4-T2  | Stock & price rules | Stock status at 0,1,10,11 | Out of stock at 0; low stock ≤10; API status wins; invalid values rejected | Logic | Pass |
+| S4-T3  | Product request body | Form values for new/existing product | Correct fields, trimmed; no stock on edit; validation messages | Logic | Pass |
+| S4-T4  | Admin endpoints     | Each request function | Correct address/method; form data values | Logic | Pass |
+| S4-T5  | Admin layout        | Admin products page | Admin menu + logout shown; customer menu/footer hidden | Screen | Pass |
+| S4-T6  | Access control      | Admin area with customer account | “Administrators only” shown; no requests sent | Screen | Pass |
+| S4-T7  | Dashboard           | Sample counts/products/orders | Correct counts, restock list (Eggs, Milk), latest order | Screen | Pass |
+| S4-T8  | Product list/delete | Delete + edit actions | Confirm before delete; product removed; edit opens form | Screen | Pass |
+| S4-T9  | Add product         | Empty + filled form | Validation messages; then request + confirmation | Screen | Pass |
+| S4-T10 | Edit product        | Change name + save | Returns to list; “was updated” message | Screen | Pass |
+| S4-T11 | Inventory           | Low/sold-out products; stock update | Warnings shown; invalid blocked; valid saved | Screen | Pass |
+| S4-T12 | Orders              | Pending/delivered orders; filters | Allowed buttons only; filters work; status updates | Screen | Pass |
+| S4-T13 | Block/unblock       | Account actions | Confirm before block; status toggles with messages | Screen | Pass |
+| S4-T14 | Customer details    | View customer | Details page opens; endpoint requested | Screen | Pass |
+| S4-T15 | Order details       | Open order details | Heading, delivery info, back link | Screen | Pass |
+| S4-T16 | Missing backend route | 404 non‑JSON | Error keeps 404; “endpoint not found” | Logic | Pass |
+
+---
+
+## 4. Manual Verification Checklist
+
+| Scenario | Expected outcome | Result |
+|----------|-----------------|--------|
+| Open admin signed out | Login form shown | Pass |
+| Admin with customer account | “Administrators only”; no requests | Pass |
+| Dashboard as admin | Admin header only; counts, restock list, latest orders | Pass |
+| Add product empty | Validation messages; nothing sent | Pass |
+| Add product with picture | Confirmation; product appears with picture | Pass |
+| Edit product price | Returns to list; request excludes stock | Pass |
+| Delete product | Confirm first; row disappears | Pass |
+| Inventory low/sold-out | Amber/red warnings | Pass |
+| Enter -3 or 2.5 stock | Message; nothing sent | Pass |
+| Save 25 stock | Returns with message; badge updated | Pass |
+| Filter orders pending | Only pending shown | Pass |
+| Compare pending vs delivered | Pending → Start/Cancel; Delivered → none | Pass |
+| Start processing + cancel | Status updates; cancel restores stock | Pass |
+| Order details | Items, delivery, payment, totals | Pass |
+| Customer block/unblock | Confirm; status toggles | Pass |
+| Backend without admin routes | “Endpoint not found” | Pass |
+| Expired login token | “Log in again” message | Pass |
+| Log out | Session ends; shop home opens | Pass |
+
+---
+
+## 5. Test Failure Analysis & Resolution
+
+- **Timeouts:** Several UI tests exceeded Vitest’s 5s default due to jsdom overhead.  
+- **Payload mismatch:** Product payload always returned FormData, even without image. Image field nested incorrectly inside emoji field.
+
+**Fixes applied:**
+- Increased timeout, enabled `vmThreads` in Vitest.  
+- Payload builder returns JSON when no image; FormData only with image.  
+- Separated image upload field from emoji field.
+
+After fixes: **All 29 tests passed** across 5 files, production build succeeded.
+
+---
+
+## 📊 Result Summary
+
+| Measure              | Value |
+|-----------------------|-------|
+| Automated tests written | 16   |
+| Passed                 | 16   |
+| Failed                 | 0    |
+| Date of run            | Oct 26, 2026 |
+
+---
+
 ## 7. Conclusion
 Sprint 4 completed the Admin Panel backend: product management, stock status tracking, strict order transitions with stock restoration, customer account management, and persistent Supabase image uploads. All 30 automated tests passed and admin endpoints were verified against unauthorized access. The backend is ready for final frontend integration and deployment.
+in frontend, the automated tests cover the rules and requests that must match the backend and the screens an administrator uses most: the dashboard, products, inventory, orders and customers. The manual checks follow the same paths in the browser and all passed.
