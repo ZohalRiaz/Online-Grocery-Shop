@@ -1,12 +1,10 @@
-# Sprint 4 Review Report — Fresh Mart E-Commerce Grocery Shop
+# Sprint 4 Review Report 
 
 **Project:** Fresh Mart — Online Grocery Shop  
 **Sprint:** Sprint 4 — Admin Panel  
 **Sprint Duration:** October 18–24, 2026  
 **Product Owner:** Sayeda Taiba Agha  
-**Scrum Master:** Zohal Riaz  
-**Frontend Developer:** Faezah Ahmadi  
-**Backend Developer:** Salma Rahman  
+ 
 **Sprint Review Date:** October 24, 2026
 
 ---
