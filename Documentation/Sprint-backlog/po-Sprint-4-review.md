@@ -118,8 +118,8 @@ These fixes were made in order to solve the problems found during the Sprint 4 d
 | Automated Tests Passed | 30 | 16 |
 | Automated Tests Failed | 0 | 0 |
 | Manual Test Cases or Checks | 8 | 18 |
-| Critical Bugs | 0 | |
-| Major Bugs | 0 |  |
+| Critical Bugs | 0 | 0 |
+| Major Bugs | 0 | 0 |
 | Minor Bugs | 1 carried over from Sprint 2, resolved through a workaround | No separate severity count provided |
 | Production Build | Not specified in backend summary | Successful |
 
