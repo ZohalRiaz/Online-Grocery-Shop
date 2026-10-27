@@ -11,7 +11,7 @@ Fresh Mart · Online Grocery Shop
 | Item            | Detail                                                                 |
 |-----------------|-------------------------------------------------------------------------|
 | Course          | ITC 315, Software Engineering Project                                   |
-| Sprint          | Sprint 4 of 4, October 18 to October 24, 2026                           |
+| Sprint          | Sprint 4 of 4, October 18 to October 25, 2026                           |
 | Epic            | Admin Panel                                                            |
 | Prepared by     | Faezah Ahmadi, Frontend Developer                                       |
 | Backlog scope   | US-21, US-22, US-28 and US-29 (Sprint 4 planning document)             |
@@ -23,10 +23,9 @@ Fresh Mart · Online Grocery Shop
 
 ## 1. Sprint Overview
 
-The first three sprints built the customer side (register, browse, cart, checkout, review orders).  
-Sprint 4 builds the **Admin Panel**: product, inventory, order, and customer account management.  
-
-**Sprint goal:** Authorized administrator can manage products, inventory, orders, and accounts securely.
+The three sprints built the customer side of Fresh Mart online shop: registering, browsing, searching, filling a cart, checking out and reviewing past orders. Sprint 4 builds the other side of the shop. The frontend work was to give the administrator one place to keep the shop running: adding and editing products, watching stock, moving orders forward and managing customer accounts.
+Every screen follows the rules of the Sprint 4 backend exactly, so that nothing has to be adjusted on the backend side when the two parts are joined.
+**Sprint goal:** An authorized administrator can manage products, inventory, customer orders and customer accounts from a secure Admin Panel.
 
 ---
 
@@ -97,20 +96,12 @@ Sprint 4 builds the **Admin Panel**: product, inventory, order, and customer acc
 - Customer list with search.  
 - Details page with block/unblock.  
 - Confirmation before blocking.
-
-### 3.6 Technical Foundations
-- `src/services/adminApi.js` holds rules + endpoints.  
-- Shared admin components (badges, thumbnails, forms).  
-- Form-data requests for picture upload.  
-- Clearer error handling.  
-- Routing with unique addresses for each task.
-
 ---
 
 ## 4. Interface & Experience
 
-- Dark green header, rounded white cards, green buttons.  
-- Responsive layout:  
+The admin panel uses the design of the earlier sprints: dark green header, rounded white cards, green buttons, soft shadows and the same status badges. Stock badges follow the same idea in three colors.
+**Responsive layout:**  
   - **Phone:** single column, scrollable tables.  
   - **Tablet:** two-column forms.  
   - **Desktop:** full-width header, side-by-side panels.
@@ -159,34 +150,35 @@ Sprint 4 builds the **Admin Panel**: product, inventory, order, and customer acc
 | Date       | Focus                  | Result                                                   |
 |------------|------------------------|----------------------------------------------------------|
 | Oct 18 Sun | Planning & groundwork  | Admin API file, rules, routes, access control            |
-| Oct 19 Mon | Dashboard & products   | Dashboard, product list, add/edit forms, delete confirm  |
-| Oct 20 Tue | Inventory, orders, customers | Stock table, warnings, order list, customer list |
-| Oct 21 Wed | Refinement             | Separate pages, header, picture upload, clearer errors   |
-| Oct 22 Thu | Testing & delivery     | Automated tests, browser checks, fixes, sprint report    |
+| Oct 20 Mon | Dashboard & products   | Dashboard, product list, add/edit forms, delete confirm  |
+| Oct 21 Tue | Inventory, orders, customers | Stock table, warnings, order list, customer list |
+| Oct 22 Wed | Refinement             | Separate pages, header, picture upload, clearer errors   |
+| Oct 23 Thu | Testing & delivery     | Automated tests, browser checks, fixes, sprint report    |
 
 ---
 
 ## 8. Verification Scenarios
 
-- Admin signed out → Login form shown  
-- Admin with customer account → “Administrators only”  
-- Dashboard → Counts, restock list, latest orders  
-- Add product empty → Validation messages  
-- Add product with picture → Confirmation + listed with picture  
-- Edit product price → Back to list + message  
-- Delete product → Confirm first, row disappears  
-- Inventory low/out-of-stock → Amber/red warnings  
-- Invalid stock (-3, 2.5) → Message, nothing sent  
-- Save stock (25) → Badge updated to In stock  
-- Filter orders → Pending only shown  
-- Pending vs delivered → Pending has buttons, delivered none  
-- Cancel order → Confirmation, items return to stock  
-- Order details → Items, delivery, totals shown  
-- Customer block/unblock → Confirmation, status changes  
-- Backend missing routes → “Endpoint not found”  
-- Expired token → “Log in again” message  
-- Log out → Session ends, shop home opens  
-
+| Scenario                                      | Expected outcome                                               |
+|-----------------------------------------------|----------------------------------------------------------------|
+| Open the admin address while signed out        | The administrator login form is shown                          |
+| Open the admin address with a customer account | Administrators only is shown and no admin request is sent       |
+| Open the dashboard as administrator            | Admin header only; counts, restock list and latest orders appear|
+| Submit the add form empty                      | Messages under the fields; nothing is sent                     |
+| Add a product with a picture                   | Confirmation message; the product is listed with its picture    |
+| Edit a product's price and save                | Back on the list with a message; the stock was not sent         |
+| Press Delete, then confirm                     | Confirmation question first; the row disappears only after Confirm |
+| Open inventory with a low and a sold-out product | Amber and red warnings name the products                      |
+| Enter -3 or 2.5 as the new stock               | Message under the box; nothing is sent                         |
+| Save 25 as the new stock                       | Back on inventory with a message; the badge turns to In stock   |
+| Filter orders by Pending                       | Only pending orders are listed                                 |
+| Look at a pending and a delivered order        | Pending offers Start processing and Cancel; delivered offers no buttons |
+| Cancel an order                                | Confirmation first; the items return to stock                  |
+| Open an order's details                        | Items, delivery information, payment and totals are shown       |
+| Open a customer, block and unblock             | Confirmation before blocking; the status changes each time      |
+| Use a backend without the admin routes         | A message says the endpoint was not found                      |
+| Use an expired login token                     | A message asks the administrator to log in again                |
+| Press Log out                                  | The session ends and the shop home page opens                   |
 ---
 
 ## 9. Obstacles & Decisions
@@ -205,3 +197,20 @@ Sprint 4 builds the **Admin Panel**: product, inventory, order, and customer acc
 **What went well:**  
 - Backend endpoint list simplified badge/warning logic.  
 - Reused confirmation
+## 11. Appendix
+
+### A. Code organization
+
+| Location                                | Purpose                                                   |
+|-----------------------------------------|-----------------------------------------------------------|
+| src/pages/admin/AdminLayout.jsx         | Access control, admin header and the route to every admin page |
+| src/pages/admin/DashboardPage.jsx       | Count cards, restock list and latest orders               |
+| src/pages/admin/ProductsAdminPage.jsx   | Product table, add page and edit page                     |
+| src/pages/admin/InventoryPage.jsx       | Stock table, warnings and the update-stock page           |
+| src/pages/admin/OrdersAdminPage.jsx     | Order list, status controls and the order details page    |
+| src/pages/admin/CustomersAdminPage.jsx  | Customer table, customer details and block control        |
+| src/components/AdminUI.jsx              | Stock badge, thumbnail, count card and form field         |
+| src/services/adminApi.js                | Admin requests and the rules copied from the backend      |
+| src/services/api.js                     | Shared request code: form-data bodies and clearer errors  |
+| src/App.jsx                             | Admin routes, admin layout without customer header and footer, Admin link for staff |
+| tests/sprint4.test.jsx, tests/api.test.js | Automated tests for this sprint                          |
