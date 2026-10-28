@@ -108,9 +108,10 @@ Two issues encountered during development were fixed immediately, and one new is
 **Cause:** The Supabase bucket policy was too restrictive and blocked public read access.  
 **Resolution:** Updated the Supabase Storage policy to allow public read access (`SELECT` on `bucket_id = 'media'`).
 
-Note: The minor issues reported in earlier sprints (from Sprint 2 onwards) were all resolved this sprint, so this document records only the eight test cases carried out in Sprint 4.
 ---
+Note: The minor issues reported in earlier sprints (from Sprint 2 onwards) were all resolved this sprint, so this document records only the eight test cases carried out in Sprint 4.
 
+---
 ## **Frontend Testing**
 
 Sprint four test report  
