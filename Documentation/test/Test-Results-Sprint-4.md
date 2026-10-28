@@ -2,7 +2,7 @@
 
 **Project:** FreshMart — Online Grocery Shop  
 **Testers:** Salma Rahman (Backend Developer), Faezah Ahmadi (Frontend Developer)    
-**Sprint:** Sprint 4 (October 18–22, 2026)  
+**Sprint:** Sprint 4 (October 18–22, 2026) , but took (October 18–24, 2026)
 **Environment:** Local development server (Django), deployed on Render, database on Supabase (PostgreSQL), storage on Supabase Buckets, React 19, Vite, Tailwind CSS 4, lucide-react
 
 During Sprint 4, I (Salma Rahman)tested the new Admin Panel endpoints and confirmed that the security rules, order transitions, customer management logic, and cloud image uploads work correctly.
