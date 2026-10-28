@@ -19,7 +19,7 @@ During sprint four I (Faezah Ahmadi) tested managing products, stock, customer o
 | Manual Test Cases | 8 |
 | Critical Bugs | 0 |
 | Major Bugs | 0 |
-| Minor Bugs | 1 (BUG-001 from Sprint 2, resolved through a workaround) |
+| Minor Bugs |0 |
 
 ---
 
@@ -108,27 +108,7 @@ Two issues encountered during development were fixed immediately, and one new is
 **Cause:** The Supabase bucket policy was too restrictive and blocked public read access.  
 **Resolution:** Updated the Supabase Storage policy to allow public read access (`SELECT` on `bucket_id = 'media'`).
 
----
-
-## 6. Bugs Carried Forward
-
-### BUG-001: Database Test Cleanup Error
-**Severity:** Minor  
-**Priority:** Low  
-**Status:** Resolved through a standardized workaround  
-**Found By:** Salma Rahman  
-**Origin:** Sprint 2
-
-**Description:** When Django tests are run without the `--keepdb` flag, the test database cannot be cleaned up successfully because Supabase's connection pooler keeps connections open longer than Django expects.
-
-**Impact:** The tests pass, but automatic test-database deletion fails. This is a cleanup issue only and does not affect the correctness of the test results.
-
-**Resolution:** The standardized command for running tests is:
-```powershell
-python manage.py test store --keepdb
-```
-The `--keepdb` flag reuses the existing test database instead of recreating it for every test run.
-
+Note: The minor issues reported in earlier sprints (from Sprint 2 onwards) were all resolved this sprint, so this document records only the eight test cases carried out in Sprint 4.
 ---
 
 ## **Frontend Testing**
