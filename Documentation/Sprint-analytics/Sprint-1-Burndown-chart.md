@@ -54,11 +54,6 @@ Ideal Burndown:
 Analysis
 --------------------------------------------------
 
-Estimated Velocity:
-The sprint began with 30 estimated Story Points.
-The ideal burndown represents an average reduction of
-6 Story Points per day across five daily intervals.
-
 Performance:
 - October 5: Sprint planning and backlog organization.
 - October 6: Development preparation and task assignments.
