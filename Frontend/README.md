@@ -1,6 +1,6 @@
 # Frontend - FreshMart Online Grocery Shop
 
-The live site is at https://fronte-omega.vercel.app/ and uses the live backend at https://freshmart-ikhw.onrender.com/api.
+The live site is at https://fronte-omega.vercel.app/ and uses the live backend as well.
 
 ## Technology Stack
 
@@ -103,18 +103,3 @@ To use the admin panel, create an administrator on the backend with `python mana
 
 The test suite is run with `npm test`. The tests use sample data and do not need the backend. There is one test file for each sprint (`tests/sprint1.test.jsx` to `tests/sprint4.test.jsx`) and `tests/api.test.js` for the shared request code. See `tests/README.md` for what each file covers.
 
-## Deployment
-
-The frontend is deployed on Vercel at https://fronte-omega.vercel.app/ and is built as static files (`npm run build`, output folder `dist`). Three things must be right for the live site to reach the live backend:
-
-1. **Backend address at build time.** Vite writes `VITE_API_BASE_URL` into the build. A `.env` file is not uploaded with the code (it is in `.gitignore`), so the variable must be added in the Vercel project under Settings, Environment Variables, set to `https://freshmart-ikhw.onrender.com/api`, and the project must be redeployed after it is added. If it is missing, the app uses the default address written in `src/services/api.js`.
-2. **CORS on the backend.** The backend only accepts requests from the addresses listed in `CORS_ALLOWED_ORIGINS` in the Render dashboard. Add `https://fronte-omega.vercel.app` there (with `https://` and without a trailing slash; separate several addresses with commas), then redeploy the backend. Locally this works because `http://localhost:5173` is already allowed.
-3. **HTTPS on both sides.** A page served over HTTPS cannot call an `http://` backend. The backend address must start with `https://`.
-
-If the site loads but shows no products, open the browser's developer tools (Console and Network tabs): a CORS message points to item 2, a failed request to the wrong address points to item 1. A free Render backend goes to sleep when unused, so the first request after a pause can take up to a minute; the app shows a "took too long" message and works when the request is repeated.
-
-## Known Limitations
-
-- The low-stock limit (10 or fewer) is also written in the frontend; it must match the backend.
-- Product pictures are uploaded from the admin form; products without a picture show their emoji.
-- Customer accounts can only be blocked and unblocked from the admin panel.
