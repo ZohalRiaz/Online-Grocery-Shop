@@ -59,14 +59,20 @@ Burndown Chart Data
 Actual / Estimated Story Points:
 
 Day 0 (Oct 11): 20
+
 Day 1 (Oct 12): 10
+
 Day 2 (Oct 13): 0
 
+-------------------------------------------------
 Ideal Burndown:
 
 Day 0 (Oct 11): 20
+
 Day 1 (Oct 12): 13.33
+
 Day 2 (Oct 13): 6.67
+
 Day 3 (End): 0
 
 --------------------------------------------------
@@ -89,6 +95,7 @@ Chart Description
 
 The burndown chart shows estimated remaining work decreasing from 20 Story Points on October 11 to zero on October 13. The ideal line represents a steady reduction in remaining work throughout the sprint.
 
+-------------------------------------------------
 **Prepared By** : Zohal Riaz
 
 **Role**: Scrum Master
