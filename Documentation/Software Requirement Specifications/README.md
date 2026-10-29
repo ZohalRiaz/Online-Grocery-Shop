@@ -6,7 +6,7 @@
 **Project:** E-commerce Grocery Shop  
 **Version:** 1.0  
 **Date:** 8 October, 2026  
-**Prepared by:** Sayeda Taiba Agha (Product Owner) and Developer Team
+**Prepared by:** Sayeda Taiba Agha (Product Owner) and Developer Team (Faezah Ahmadi and Salma Rahman)
 
 ---
 
